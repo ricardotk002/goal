@@ -13,7 +13,10 @@ body {
 	// background: url("../img/bg.jpg") no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: center center;
+	position: relative;
+	background-position: top center;
+	background-attachment: fixed;
+
 	-webkit-font-smoothing: antialiased;
 }
 
