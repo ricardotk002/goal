@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 201, ../scss/custom.scss */
 #box {
-  margin-top: 250px;
+  margin-top: 0.9375rem;
 }
 /* line 203, ../scss/custom.scss */
 #box #title {
@@ -389,4 +389,11 @@ ul {
 /* line 355, ../scss/custom.scss */
 .orange {
   background-color: #f39c12 !important;
+}
+
+@media only screen and (min-width: 40.063em) {
+  /* line 360, ../scss/custom.scss */
+  #box {
+    margin-top: 250px;
+  }
 }
