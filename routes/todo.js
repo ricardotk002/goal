@@ -44,3 +44,23 @@ exports.delete = function(req, res) {
         });
     });
 };
+
+exports.done = function(req, res) {
+    Todo.findOne({
+        _id: req.params.todo_id
+    }, function(err, todo) {
+        if(err)
+            res.send(err);
+        todo.done = true;
+        todo.save(function(err) {
+            if(err)
+                res.send(err);
+        });
+
+        Todo.find(function(err, todos) {
+            if(err)
+                req.send(err);
+            res.json(todos);
+        });
+    })
+};
