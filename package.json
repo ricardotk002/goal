@@ -1,0 +1,17 @@
+{
+  "name": "goal",
+  "version": "0.0.1-2",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.5.1",
+    "jade": "*",
+    "mongoose": "~3.6.2"
+  },
+  "subdomain": "goal",
+  "engines": {
+    "node": "0.10.x"
+  }
+}

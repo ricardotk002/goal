@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  div.row(ng-controller='MainController')
+    div.large-6.large-centered.columns
+      div#box
+        div#title
+          h2 {{ date | date:'EEE, dd MMM yyyy' }}
+
+        div.container
+          div#list_item
+            //- input#toggle-all(type='checkbox', style='display: none;')
+            //- label(for='toggle-all', style='display:none;')
+
+            ul#todo-list
+              li.item(ng-repeat='todo in todos')
+                div.item_check
+                  div.text-center
+                    i.icon-ok
+                div.view.item_content
+                  label {{ todo.text }}
+                  a.destroy(ng-click='deleteTodo()')
+
+                //- input.edit(type='text', value='{{ todo.text }}')
+
+        div#write
+          form(ng-submit='createTodo()')
+            input#new-todo(type='text', placeholder='Add a new Task', ng-model="formData.text")
+            span +
+    //- p.
+    //-   todos count: {{ todos.length }}
+
+    //- form
+    //-   input(type='text', placeholder='enter a todo', ng-model='formData.text')
+    //-   button(type='submit', ng-click='createTodo()') Submit
+
+    //- ul
+    //-   li(ng-repeat="todo in todos").
+    //-     {{ todo.text }}
