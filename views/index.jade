@@ -17,7 +17,7 @@ block content
                 div.item_check
                   div.text-center
                     i.icon-ok
-                div.view.item_content
+                div.view.item_content(ng-click='toggle-done(todo._id)')
                   label {{ todo.text }}
                   a.destroy(ng-click='deleteTodo(todo._id)')
 

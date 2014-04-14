@@ -36,4 +36,8 @@ app.controller('MainController', function($scope, $http) {
 				console.log('error' + data);
 			});
 	};
+
+	$scope.toggleDone = function(id) {
+		
+	}
 });
