@@ -19,7 +19,7 @@ block content
                     i.icon-ok
                 div.view.item_content
                   label {{ todo.text }}
-                  a.destroy(ng-click='deleteTodo()')
+                  a.destroy(ng-click='deleteTodo(todo._id)')
 
                 //- input.edit(type='text', value='{{ todo.text }}')
 

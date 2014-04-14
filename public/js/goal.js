@@ -26,7 +26,7 @@ app.controller('MainController', function($scope, $http) {
 	};
 
 	$scope.deleteTodo = function(id) {
-		$http.delete('/api/todos' + id)
+		$http.delete('/api/todos/' + id)
 			.success(function(data) {
 				$scope.formData = {};
 				$scope.todos = data;
