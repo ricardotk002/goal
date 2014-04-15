@@ -3,7 +3,9 @@ var mongoose = require('mongoose')
 mongoose.connect('mongodb://usrgoal:goalx@novus.modulusmongo.net:27017/zovy8Sev')
 
 var Todo = mongoose.model('Todo', {
-    text : String
+    text : String,
+    done : Boolean,
+    deleted : Boolean
 });
 
 exports.get = function(req, res){
@@ -11,6 +13,16 @@ exports.get = function(req, res){
         if(err)
             res.send(err);
         res.json(todos)
+    });
+};
+
+exports.getOne = function(req, res){
+    Todo.findOne({
+        _id: req.params.todo_id
+    }, function(err, todo) {
+        if(err)
+            res.send(err);
+        res.json(todo)
     });
 };
 
@@ -45,13 +57,15 @@ exports.delete = function(req, res) {
     });
 };
 
-exports.done = function(req, res) {
+exports.toggleDone = function(req, res) {
     Todo.findOne({
         _id: req.params.todo_id
     }, function(err, todo) {
+
         if(err)
             res.send(err);
-        todo.done = true;
+        
+        todo.done = !todo.done;
         todo.save(function(err) {
             if(err)
                 res.send(err);

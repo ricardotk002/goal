@@ -31,9 +31,10 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/api/todos', todos.get);
+app.get('/api/todo/:todo_id', todos.getOne);
 app.post('/api/todos', todos.post);
 app.delete('/api/todos/:todo_id', todos.delete);
-app.get('/api/todos/:todo_id/done', todos.delete);
+app.get('/api/todo/:todo_id/toggleDone', todos.toggleDone);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

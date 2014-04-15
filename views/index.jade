@@ -5,7 +5,7 @@ block content
     div.small-12.medium-12.large-6.large-centered.columns
       div#box
         div#title
-          h2 {{ date | date:'EEE, dd MMM yyyy' }}
+          h2 {{ date | date:'EEEE, dd MMMM yyyy' }}
 
         div.container
           div#list_item
@@ -13,12 +13,12 @@ block content
             //- label(for='toggle-all', style='display:none;')
 
             ul#todo-list
-              li.item(ng-repeat='todo in todos')
-                div.item_check
+              li.item(ng-repeat='todo in todos', ng-class="{done: todo.done}")
+                div.item_check(ng-class="{item_check_active: todo.done}")
                   div.text-center
                     i.icon-ok
-                div.view.item_content(ng-click='toggle-done(todo._id)')
-                  label {{ todo.text }}
+                div.view.item_content(ng-click='toggleDone(todo._id)', ng-class="{item_content_active: todo.done}")
+                  label {{ todo.text }} {{ todo.done }}
                   a.destroy(ng-click='deleteTodo(todo._id)')
 
                 //- input.edit(type='text', value='{{ todo.text }}')
