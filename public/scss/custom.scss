@@ -42,6 +42,8 @@ background: url(../img/destroy.png) no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
+	position: relative;
+	background-attachment: fixed;
 }
 
 .bg_1_blur{
@@ -49,6 +51,8 @@ background: url(../img/destroy.png) no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
+	position: relative;
+	background-attachment: fixed;
 }
 
 .bg_2{
@@ -56,6 +60,8 @@ background: url(../img/destroy.png) no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
+	position: relative;
+	background-attachment: fixed;
 }
 
 .bg_2_blur{
@@ -63,6 +69,8 @@ background: url(../img/destroy.png) no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
+	position: relative;
+	background-attachment: fixed;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -199,7 +207,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #box{
-	margin-top: 250px;
+	margin-top: 0.9375rem;
 	#title{
 		background-color: #27ae60;
 		padding: 20px;
@@ -354,6 +362,12 @@ list-style-type: none;
 
 .orange{
 	background-color: #f39c12 !important;	
+}
+
+@media only screen and (min-width: 40.063em) { 
+	#box {
+	margin-top: 250px;
+	}
 }
 
 
