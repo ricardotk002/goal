@@ -18,7 +18,7 @@ block content
                   div.text-center
                     i.icon-ok
                 div.view.item_content(ng-click='toggleDone(todo._id)', ng-class="{item_content_active: todo.done}")
-                  label {{ todo.text }} {{ todo.done }}
+                  label {{ todo.text }}
                   a.destroy(ng-click='deleteTodo(todo._id)')
 
                 //- input.edit(type='text', value='{{ todo.text }}')
