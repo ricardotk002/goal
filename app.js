@@ -33,6 +33,7 @@ app.get('/', routes.index);
 app.get('/api/todos', todos.get);
 app.post('/api/todos', todos.post);
 app.delete('/api/todos/:todo_id', todos.delete);
+app.get('/api/todos/:todo_id/done', todos.delete);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
