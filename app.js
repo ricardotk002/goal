@@ -30,6 +30,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.get ('/landing', function (req, res) { res.render ('landing');  });
 app.get('/api/todos', todos.get);
 app.get('/api/todo/:todo_id', todos.getOne);
 app.post('/api/todos', todos.post);
