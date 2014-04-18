@@ -1,10 +1,10 @@
 extends layout
 
 block content
-  div.row(ng-controller='MainController')
-    div#landing
-      div.small-12.medium-12.large-6.large-centered.columns
+  div#landing
+    div.row
+      div.small-12.medium-12.large-12.large-centered.columns
         div.text-center
-          h1 corona
-          h2 Not just another To-do List app
-          button Sign in with twitter
+          h1: a(href='/landing'): img(src='/img/logo@2x.png')
+          h2 Not just another To-do List app.
+          button#twitter_button: span.icon-twitter  Sign in with twitter

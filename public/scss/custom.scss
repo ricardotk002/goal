@@ -1,3 +1,16 @@
+/*-----------------------------------------------------------------------------------
+
+  1.  Document Setup
+  2.  Landing Page
+  3.  To Do List Page
+
+-----------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------*/
+/*  1.  Document Setup
+/*-----------------------------------------------------------------------------------*/
+
+
 html, body{
 	margin: 0;
 	padding: 0;
@@ -9,13 +22,83 @@ body {
 	font-family: "jaf-bernino-sans",sans-serif;
 	font-style: normal;
 	font-weight: 300;
-   // overflow: hidden;
-	// background: url("../img/bg.jpg") no-repeat;
+	background-color: #FFFFFF;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
 	-webkit-font-smoothing: antialiased;
 }
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  2.  Landing Page
+/*-----------------------------------------------------------------------------------*/
+
+body{
+	display: table;
+}
+
+#landing{
+	display: table-cell;
+	vertical-align: middle;
+
+	h1{
+		margin: 0;
+		img{
+			width: 180px;
+			height: 137px;
+		}
+	}
+
+	h2{
+		font-family: "museo-sans",sans-serif;
+		font-style: normal;
+		font-weight: 100;
+		font-size: 1.8rem;
+		color: #7C7C7C;
+		margin: 50px auto;
+	}
+
+	#twitter_button{
+		color: #FFFFFF;
+		text-decoration: none;
+		font-size: 1.1rem;
+		padding: 15px 40px;
+		border-radius: 50px;
+		background-color: #00ACED;
+		border: 1px solid #009DD9;
+		border-bottom: 2px solid #009DD9;
+		font-family: "museo-sans",sans-serif;
+		font-style: normal;
+		font-weight: 100 !important;
+		outline: none;
+		-webkit-transition: all ease-in-out 0.1s;
+		-moz-transition: all ease-in-out 0.1s;
+		-ms-transition: all ease-in-out 01s;
+		-o-transition: all ease-in-out 0.1s;
+		transition: all ease-in-out 0.1s;
+	}
+	#twitter_button:hover{
+		background-color: #00B2F5;
+		border: 1px solid #00B2F5;
+		border-bottom: 2px solid #009DD9;
+	}
+
+	#twitter_button:active{
+		background-color: #00ACED;
+		border: 1px solid #009DD9;
+		border-top: 2px solid #009DD9;
+	}
+	
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  3.  To Do List Page
+/*-----------------------------------------------------------------------------------*/
+
+
+
 
 #todo-list .destroy {
 position: absolute;
@@ -36,6 +119,9 @@ background: url(../img/destroy.png) no-repeat;
   background-position: 0 -20px;
 }
 
+#container{
+	height: 100%;
+}
 
 .bg_1{
 	background: url("../img/bg_1.jpg") no-repeat;
@@ -81,11 +167,11 @@ h1,h2,h3,h4,h5,h6{
 
 @font-face {
   font-family: 'goal';
-  src: url('../font/goal.eot?34791379');
-  src: url('../font/goal.eot?34791379#iefix') format('embedded-opentype'),
-       url('../font/goal.woff?34791379') format('woff'),
-       url('../font/goal.ttf?34791379') format('truetype'),
-       url('../font/goal.svg?34791379#goal') format('svg');
+  src: url('../font/goal.eot?20539058');
+  src: url('../font/goal.eot?20539058#iefix') format('embedded-opentype'),
+       url('../font/goal.woff?20539058') format('woff'),
+       url('../font/goal.ttf?20539058') format('truetype'),
+       url('../font/goal.svg?20539058#goal') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -95,7 +181,7 @@ h1,h2,h3,h4,h5,h6{
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'goal';
-    src: url('../font/goal.svg?34791379#goal') format('svg');
+    src: url('../font/goal.svg?20539058#goal') format('svg');
   }
 }
 */
@@ -132,7 +218,7 @@ h1,h2,h3,h4,h5,h6{
 }
  
 .icon-ok:before { content: '\e800'; } /* '' */
-
+.icon-twitter:before { content: '\e801'; } /* '' */
 
 .mask{
 	position: absolute;
