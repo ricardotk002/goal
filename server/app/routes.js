@@ -1,0 +1,222 @@
+'use strict';
+
+var Todo = require('./models/todo');
+var User = require('./models/user');
+
+module.exports = function(app, passport) {
+    // GET /
+    app.get('/', isLoggedIn, function(req, res){
+        res.render('index', { user : req.user });
+    });
+
+    // GET /landing
+    app.get ('/landing', function(req, res) {
+        res.render ('landing');
+    });
+
+// auth
+    
+    // GET /auth/twitter/
+    app.get('/auth/twitter', passport.authenticate('twitter'));
+
+    // GET /auth/twitter/callback
+    app.get('/auth/twitter/callback',
+        passport.authenticate('twitter', {
+            successRedirect: '/',
+            failureRedirect: '/landing'
+        })
+    );
+
+    app.get('/logout', function(req, res) {
+        req.logout();
+        res.redirect('/landing');
+    });
+// todos
+
+    // GET /api/todos
+    app.get('/api/user/todos', isLoggedInApi, function(req, res){
+        User.findById(req.user._id,
+            function(err, user) {
+                if(err)
+                    res.send(err);
+                res.json(user.todos)
+            });
+    });
+
+    app.post('/api/user/todo', isLoggedInApi, function(req, res) {
+        console.log('user.id + ' + req.user._id);
+        User.findByIdAndUpdate(req.user._id,
+            {
+                $push: { 
+                    todos : { text: req.body.text } 
+                }
+            },
+            function(err, user) {
+                if(err)
+                    res.send(err);
+                console.log('user + ' + user);
+                res.json(user.todos);
+            });
+    });
+
+    app.delete('/api/user/todo/:todo_id', function(req, res) {
+        User.findByIdAndUpdate(req.user._id,
+            {
+                $pull: {
+                    todos: { _id: req.params.todo_id }
+                }
+            },
+            function(err, user) {
+                if(err)
+                    res.send(err);
+                res.json(user.todos);
+            });
+    });
+
+    app.get('/api/user/todo/:todo_id/toggleDone', function(req, res) {
+        User.find(
+            {
+                'todos._id' : req.params.todo_id
+            },
+            {
+                '$set' : {
+                    'todos.$.done': true
+                }
+            },
+            function(err, user) {
+                if(err)
+                    res.send(err);
+                res.json(user);
+            });
+    });
+
+    // app.get('/api/todos', function(req, res){
+    //     Todo.find(function(err, todos) {
+    //         if(err)
+    //             res.send(err);
+    //         res.json(todos)
+    //     });
+    // });
+
+    // GET /api/todo/123123123
+    // app.get('/api/todo/:todo_id', function(req, res){
+    //     Todo.findOne({
+    //         _id: req.params.todo_id
+    //     }, function(err, todo) {
+    //         if(err)
+    //             res.send(err);
+    //         res.json(todo)
+    //     });
+    // });
+
+    // POST /api/todo
+    // app.post('/api/todo', function(req, res) {
+    //     Todo.create({
+    //         text: req.body.text,
+    //         done: false
+    //     }, function(err, todo) {
+    //         if(err)
+    //             res.send(err);
+
+    //         Todo.find(function(err, todos) {
+    //             if(err)
+    //                 req.send(err);
+    //             res.json(todos);
+    //         });
+    //     })
+    // });
+
+    // app.get('/api/todos/:todo_id', function(req, res) {
+    //     Todo.remove({
+    //         _id: req.params.todo_id
+    //     }, function(err, todo) {
+    //         if(err)
+    //             res.send(err);
+
+    //         Todo.find(function(err, todos) {
+    //             if(err)
+    //                 req.send(err);
+    //             res.json(todos);
+    //         });
+    //     });
+    // });
+
+    // app.put('/api/todo/:todo_id/toggleDone', function(req, res) {
+    //     Todo.findOne({
+    //         _id: req.params.todo_id
+    //     }, function(err, todo) {
+    //         if(todo) {
+    //             todo.done = !todo.done;
+    //             todo.save(function(err) {
+    //                 if(err)
+    //                     res.send(err);
+    //             });
+    //         }
+
+    //         Todo.find(function(err, todos) {
+    //             if(err)
+    //                 req.send(err);
+    //             res.json(todos);
+    //         });
+    //     })
+    // });
+
+// users
+
+    // GET /api/users
+
+    app.get('/api/users', function(req, res){
+        User.find(function(err, users) {
+            if(err)
+                res.send(err);
+            res.json(users)
+        });
+    });
+
+    app.get('/api/user', function(req, res) {
+        User.findById(req.user._id,
+            function(err, user) {
+                if(err)
+                    req.send(err);
+                res.json(user);
+            });
+    });
+
+    app.get('/api/user/:user_id', function(req, res) {
+        User.findById(req.params.user_id,
+            function(err, user) {
+                if(err)
+                    req.send(err);
+                res.json(user);
+            });
+    });
+
+    app.delete('/api/user/:user_id', function(req, res) {
+        User.remove({
+            _id: req.params.user_id
+        }, function(err, user) {
+            if(err)
+                res.send(err);
+
+            User.find(function(err, users) {
+                if(err)
+                    req.send(err);
+                res.json(users);
+            });
+        });
+    });
+}
+
+function isLoggedIn(req, res, next) {
+    if(req.isAuthenticated()) {
+        return next();
+    }
+    res.redirect('/landing');
+}
+
+function isLoggedInApi(req, res, next) {
+    if(req.isAuthenticated()) {
+        return next();
+    }
+    res.json({ error: 'user not valid'});
+}
