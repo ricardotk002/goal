@@ -3,14 +3,14 @@ extends layout
 block content
   nav#top-nav
     h1: a(href='/') corona
+    p(style='font-size: 12px; margin-bottom:0; float: right; color: #FFFFFF; position: relative; top: 12px; right: 5px;}') #{user.twitter.displayName}
+      a.small(href='/logout', style='color: #ccc;')  (logout)
   div#container
     div.row(ng-controller='MainController')
       div.small-12.medium-12.large-6.large-centered.columns
         div#box
           div#title
             h2 {{ date | date:'EEEE, dd MMMM yyyy' }}
-            p(style='font-size: 12px; margin-bottom:0;') #{user.twitter.displayName}
-              a.small(href='/logout', style='color: #ccc;')  (logout)
 
           div.container
             div#list_item
