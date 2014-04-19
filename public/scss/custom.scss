@@ -29,6 +29,23 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+#top-nav{
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	background: #328099;
+	z-index: 999;
+	h1{
+		position: absolute;
+		margin: auto;
+		left: 47%;
+		font-size: 2rem;
+		a{
+			color: #FFFFFF;
+		}
+	}
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 /*  2.  Landing Page

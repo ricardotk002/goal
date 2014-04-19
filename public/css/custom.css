@@ -28,29 +28,49 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* line 32, ../scss/custom.scss */
+#top-nav {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background: #328099;
+  z-index: 999;
+}
+/* line 38, ../scss/custom.scss */
+#top-nav h1 {
+  position: absolute;
+  margin: auto;
+  left: 47%;
+  font-size: 2rem;
+}
+/* line 43, ../scss/custom.scss */
+#top-nav h1 a {
+  color: #FFFFFF;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*  2.  Landing Page
 /*-----------------------------------------------------------------------------------*/
-/* line 37, ../scss/custom.scss */
+/* line 54, ../scss/custom.scss */
 body {
   display: table;
 }
 
-/* line 41, ../scss/custom.scss */
+/* line 58, ../scss/custom.scss */
 #landing {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 45, ../scss/custom.scss */
+/* line 62, ../scss/custom.scss */
 #landing h1 {
   margin: 0;
 }
-/* line 47, ../scss/custom.scss */
+/* line 64, ../scss/custom.scss */
 #landing h1 img {
   width: 180px;
   height: 137px;
 }
-/* line 53, ../scss/custom.scss */
+/* line 70, ../scss/custom.scss */
 #landing h2 {
   font-family: "museo-sans",sans-serif;
   font-style: normal;
@@ -59,7 +79,7 @@ body {
   color: #7C7C7C;
   margin: 50px auto;
 }
-/* line 62, ../scss/custom.scss */
+/* line 79, ../scss/custom.scss */
 #landing #twitter_button {
   color: #FFFFFF;
   text-decoration: none;
@@ -79,13 +99,13 @@ body {
   -o-transition: all ease-in-out 0.1s;
   transition: all ease-in-out 0.1s;
 }
-/* line 81, ../scss/custom.scss */
+/* line 98, ../scss/custom.scss */
 #landing #twitter_button:hover {
   background-color: #00B2F5;
   border: 1px solid #00B2F5;
   border-bottom: 2px solid #009DD9;
 }
-/* line 87, ../scss/custom.scss */
+/* line 104, ../scss/custom.scss */
 #landing #twitter_button:active {
   background-color: #00ACED;
   border: 1px solid #009DD9;
@@ -95,7 +115,7 @@ body {
 /*-----------------------------------------------------------------------------------*/
 /*  3.  To Do List Page
 /*-----------------------------------------------------------------------------------*/
-/* line 103, ../scss/custom.scss */
+/* line 120, ../scss/custom.scss */
 #todo-list .destroy {
   position: absolute;
   right: 5px;
@@ -107,22 +127,22 @@ body {
   background: url(../img/destroy.png) no-repeat;
 }
 
-/* line 114, ../scss/custom.scss */
+/* line 131, ../scss/custom.scss */
 #todo-list li:hover .destroy {
   display: block;
 }
 
-/* line 118, ../scss/custom.scss */
+/* line 135, ../scss/custom.scss */
 #todo-list .destroy:hover {
   background-position: 0 -20px;
 }
 
-/* line 122, ../scss/custom.scss */
+/* line 139, ../scss/custom.scss */
 #container {
   height: 100%;
 }
 
-/* line 126, ../scss/custom.scss */
+/* line 143, ../scss/custom.scss */
 .bg_1 {
   background: url("../img/bg_1.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -132,7 +152,7 @@ body {
   background-attachment: fixed;
 }
 
-/* line 135, ../scss/custom.scss */
+/* line 152, ../scss/custom.scss */
 .bg_1_blur {
   background: url("../img/bg_1_blur.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -142,7 +162,7 @@ body {
   background-attachment: fixed;
 }
 
-/* line 144, ../scss/custom.scss */
+/* line 161, ../scss/custom.scss */
 .bg_2 {
   background: url("../img/bg_2.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -152,7 +172,7 @@ body {
   background-attachment: fixed;
 }
 
-/* line 153, ../scss/custom.scss */
+/* line 170, ../scss/custom.scss */
 .bg_2_blur {
   background: url("../img/bg_2_blur.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -162,7 +182,7 @@ body {
   background-attachment: fixed;
 }
 
-/* line 162, ../scss/custom.scss */
+/* line 179, ../scss/custom.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "jaf-bernino-sans",sans-serif;
   font-style: normal;
@@ -187,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 */
-/* line 189, ../scss/custom.scss */
+/* line 206, ../scss/custom.scss */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "goal";
   font-style: normal;
@@ -213,19 +233,19 @@ h1, h2, h3, h4, h5, h6 {
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-/* line 220, ../scss/custom.scss */
+/* line 237, ../scss/custom.scss */
 .icon-ok:before {
   content: '\e800';
 }
 
 /* '' */
-/* line 221, ../scss/custom.scss */
+/* line 238, ../scss/custom.scss */
 .icon-twitter:before {
   content: '\e801';
 }
 
 /* '' */
-/* line 223, ../scss/custom.scss */
+/* line 240, ../scss/custom.scss */
 .mask {
   position: absolute;
   background: url("../img/bg.jpg") no-repeat;
@@ -242,11 +262,11 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
 }
 
-/* line 240, ../scss/custom.scss */
+/* line 257, ../scss/custom.scss */
 #write {
   position: relative;
 }
-/* line 242, ../scss/custom.scss */
+/* line 259, ../scss/custom.scss */
 #write input[type="text"] {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
@@ -276,16 +296,16 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 270, ../scss/custom.scss */
+/* line 287, ../scss/custom.scss */
 #write input[type="text"]:focus {
   outline: none;
 }
-/* line 272, ../scss/custom.scss */
+/* line 289, ../scss/custom.scss */
 #write input[type="text"]:focus + span {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 278, ../scss/custom.scss */
+/* line 295, ../scss/custom.scss */
 #write span {
   font-family: "jaf-bernino-sans",sans-serif;
   font-style: normal;
@@ -302,41 +322,41 @@ h1, h2, h3, h4, h5, h6 {
   transition: all ease 0.3s;
 }
 
-/* line 295, ../scss/custom.scss */
+/* line 312, ../scss/custom.scss */
 #box {
   margin-top: 0.9375rem;
 }
-/* line 297, ../scss/custom.scss */
+/* line 314, ../scss/custom.scss */
 #box #title {
   background-color: #27ae60;
   padding: 20px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 302, ../scss/custom.scss */
+/* line 319, ../scss/custom.scss */
 #box #title h2 {
   color: #FFFFFF;
   font-weight: 100;
 }
-/* line 307, ../scss/custom.scss */
+/* line 324, ../scss/custom.scss */
 #box .container {
   background-color: #FFFFFF;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 312, ../scss/custom.scss */
+/* line 329, ../scss/custom.scss */
 #box #list_item {
   background-color: #FFFFFF;
   color: #3A3A3A;
 }
-/* line 315, ../scss/custom.scss */
+/* line 332, ../scss/custom.scss */
 #box #list_item .item {
   border-bottom: 1px solid #e3e3e3;
   background-color: #27ae60;
   overflow: hidden;
   position: relative;
 }
-/* line 320, ../scss/custom.scss */
+/* line 337, ../scss/custom.scss */
 #box #list_item .item .item_content {
   padding: 1rem 20px;
   background-color: #FFFFFF;
@@ -348,19 +368,19 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: width 0.6s ease-in-out;
   transition: width 0.6s ease-in-out;
 }
-/* line 330, ../scss/custom.scss */
+/* line 347, ../scss/custom.scss */
 #box #list_item .item .item_content label {
   font-size: 20px;
 }
-/* line 333, ../scss/custom.scss */
+/* line 350, ../scss/custom.scss */
 #box #list_item .item .item_content:active {
   background-color: #FAFAFA;
 }
-/* line 337, ../scss/custom.scss */
+/* line 354, ../scss/custom.scss */
 #box #list_item .item .item_content_active {
   width: 85%;
 }
-/* line 340, ../scss/custom.scss */
+/* line 357, ../scss/custom.scss */
 #box #list_item .item .item_check {
   height: 100%;
   position: absolute;
@@ -372,14 +392,14 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: left 0.6s ease-in-out;
   transition: left 0.6s ease-in-out;
 }
-/* line 350, ../scss/custom.scss */
+/* line 367, ../scss/custom.scss */
 #box #list_item .item .item_check .text-center {
   display: table;
   position: absolute;
   height: 100%;
   width: 100%;
 }
-/* line 355, ../scss/custom.scss */
+/* line 372, ../scss/custom.scss */
 #box #list_item .item .item_check .text-center .icon-ok {
   display: table-cell;
   vertical-align: middle;
@@ -389,22 +409,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
-/* line 366, ../scss/custom.scss */
+/* line 383, ../scss/custom.scss */
 #box #list_item .item .item_check_active {
   left: 0;
 }
-/* line 369, ../scss/custom.scss */
+/* line 386, ../scss/custom.scss */
 #box #list_item .item:last-child {
   border: none;
 }
 
-/* line 376, ../scss/custom.scss */
+/* line 393, ../scss/custom.scss */
 hr {
   border: solid #FFFFFF;
   border-width: 1px 0 0;
 }
 
-/* line 381, ../scss/custom.scss */
+/* line 398, ../scss/custom.scss */
 .done-false {
   text-decoration: none;
   -webkit-transition: text-decoration ease 0.8s;
@@ -414,7 +434,7 @@ hr {
   transition: text-decoration ease 0.8s;
 }
 
-/* line 390, ../scss/custom.scss */
+/* line 407, ../scss/custom.scss */
 .done-true {
   text-decoration: line-through;
   -webkit-transition: text-decoration ease 0.8s;
@@ -425,7 +445,7 @@ hr {
   color: #b3b3b1;
 }
 
-/* line 401, ../scss/custom.scss */
+/* line 418, ../scss/custom.scss */
 ul {
   margin: 0;
   padding: 0;
@@ -433,63 +453,63 @@ ul {
   list-style-type: none;
 }
 
-/* line 409, ../scss/custom.scss */
+/* line 426, ../scss/custom.scss */
 .turquoise {
   background-color: #1abc9c !important;
 }
 
-/* line 413, ../scss/custom.scss */
+/* line 430, ../scss/custom.scss */
 .peter-river {
   background-color: #3498db !important;
 }
 
-/* line 417, ../scss/custom.scss */
+/* line 434, ../scss/custom.scss */
 .amethyst {
   background-color: #9b59b6 !important;
 }
 
-/* line 421, ../scss/custom.scss */
+/* line 438, ../scss/custom.scss */
 .wet-asphalt {
   background-color: #34495e !important;
 }
 
-/* line 425, ../scss/custom.scss */
+/* line 442, ../scss/custom.scss */
 .green-sea {
   background-color: #16a085 !important;
 }
 
-/* line 429, ../scss/custom.scss */
+/* line 446, ../scss/custom.scss */
 .nephritis {
   background-color: #27ae60 !important;
 }
 
-/* line 433, ../scss/custom.scss */
+/* line 450, ../scss/custom.scss */
 .belize-hole {
   background-color: #2980b9 !important;
 }
 
-/* line 437, ../scss/custom.scss */
+/* line 454, ../scss/custom.scss */
 .wisteria {
   background-color: #8e44ad !important;
 }
 
-/* line 441, ../scss/custom.scss */
+/* line 458, ../scss/custom.scss */
 .midnight-blue {
   background-color: #2c3e50 !important;
 }
 
-/* line 445, ../scss/custom.scss */
+/* line 462, ../scss/custom.scss */
 .sun-flower {
   background-color: #f1c40f !important;
 }
 
-/* line 449, ../scss/custom.scss */
+/* line 466, ../scss/custom.scss */
 .orange {
   background-color: #f39c12 !important;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 454, ../scss/custom.scss */
+  /* line 471, ../scss/custom.scss */
   #box {
     margin-top: 250px;
   }
