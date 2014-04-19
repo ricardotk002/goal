@@ -59,7 +59,7 @@ module.exports = function(app, passport) {
             });
     });
 
-    app.delete('/api/user/todo/:todo_id', function(req, res) {
+    app.delete('/api/user/todo/:todo_id', isLoggedInApi, function(req, res) {
         User.findByIdAndUpdate(req.user._id,
             {
                 $pull: {
@@ -73,7 +73,7 @@ module.exports = function(app, passport) {
             });
     });
 
-    app.get('/api/user/todo/:todo_id/toggleDone', function(req, res) {
+    app.get('/api/user/todo/:todo_id/toggleDone', isLoggedInApi, function(req, res) {
         User.find(
             {
                 'todos._id' : req.params.todo_id
@@ -165,7 +165,7 @@ module.exports = function(app, passport) {
 
     // GET /api/users
 
-    app.get('/api/users', function(req, res){
+    app.get('/api/users', isLoggedInApi, function(req, res){
         User.find(function(err, users) {
             if(err)
                 res.send(err);
@@ -173,7 +173,7 @@ module.exports = function(app, passport) {
         });
     });
 
-    app.get('/api/user', function(req, res) {
+    app.get('/api/user', isLoggedInApi, function(req, res) {
         User.findById(req.user._id,
             function(err, user) {
                 if(err)
@@ -182,7 +182,7 @@ module.exports = function(app, passport) {
             });
     });
 
-    app.get('/api/user/:user_id', function(req, res) {
+    app.get('/api/user/:user_id', isLoggedInApi, function(req, res) {
         User.findById(req.params.user_id,
             function(err, user) {
                 if(err)
@@ -191,7 +191,7 @@ module.exports = function(app, passport) {
             });
     });
 
-    app.delete('/api/user/:user_id', function(req, res) {
+    app.delete('/api/user/:user_id', isLoggedInApi, function(req, res) {
         User.remove({
             _id: req.params.user_id
         }, function(err, user) {
