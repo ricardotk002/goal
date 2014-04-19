@@ -7,7 +7,8 @@ block content
         div#box
           div#title
             h2 {{ date | date:'EEEE, dd MMMM yyyy' }}
-            small #{user.twitter.displayName}
+            p(style='font-size: 12px; margin-bottom:0;') #{user.twitter.displayName}
+              a.small(href='/logout', style='color: #ccc;')  (logout)
 
           div.container
             div#list_item
