@@ -1,4 +1,4 @@
-var app = angular.module('goal', []);
+var app = angular.module('corona', []);
 
 app.controller('MainController', function($scope, $http) {
     $scope.date = new Date();
