@@ -69,6 +69,7 @@ body {
 		padding-right: 55px;
 		line-height: 55px;
 		text-align: right;
+		display: none;
 	}
 	#profile_pic{
 		border-radius: 50%;
@@ -538,6 +539,9 @@ list-style-type: none;
 		text-align: center;
 		line-height: 1;
 		font-size: 2.75rem;
+	}
+	.top_bar_user{
+		display: block;
 	}
 }
 
