@@ -100,7 +100,7 @@ body{
 		color: #FFFFFF;
 		text-decoration: none;
 		font-size: 1.1rem;
-		padding: 15px 40px;
+		padding: 15px 30px;
 		border-radius: 50px;
 		background-color: #00ACED;
 		border: 1px solid #009DD9;
@@ -114,6 +114,15 @@ body{
 		-ms-transition: all ease-in-out 01s;
 		-o-transition: all ease-in-out 0.1s;
 		transition: all ease-in-out 0.1s;
+		span{
+			color: #FFFFFF;
+			font-size: 1.1rem;
+			margin-left: 8px;
+		}
+		.icon-twitter{
+			color: #FFFFFF;
+			font-size: 1rem;
+		}
 	}
 	#twitter_button:hover{
 		background-color: #00B2F5;
