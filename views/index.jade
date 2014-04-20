@@ -6,8 +6,11 @@ block content
       div.small-4.small-offset-4.medium-4.medium-offset-4.large-4.large-offset-4.columns
          h1: a(href='/'): img(src='/img/top_bar_logo@2x.png')
       div.small-4.medium-4.large-4.columns
+        img(src='/img/profile_pic.png')
         span#username #{user.twitter.displayName}
           a.small(href='/logout', style='color: #ccc;')  (logout)
+      div#add_task
+        span.icon-plus-1
   div#container
     div.row(ng-controller='MainController')
       div.small-12.medium-12.large-6.large-centered.columns

@@ -31,6 +31,7 @@ body {
 
 #top-bar{
 	position: fixed;
+	padding-right: 55px;
 	height: 55px;
 	width: 100%;
 	background: #2E3435;
@@ -62,6 +63,20 @@ body {
 			font-weight: 300;
 			float: right;
 			line-height: 55px;
+		}
+	}
+	#add_task{
+		width: 55px;
+		height: 55px;
+		background: #35C2AB;
+		background-image: -o-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
+		background-image: -moz-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
+		background-image: -webkit-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
+		background-image: -ms-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
+		background-image: linear-gradient(-180deg, #35C2AB 0%, #45E5CB 100%);
+		span{
+			font-size: 1rem;
+			color: #FFFFFF;
 		}
 	}
 }
