@@ -70,16 +70,17 @@ body {
 }
 /* line 68, ../scss/custom.scss */
 #top-bar .top_bar_user {
+  line-height: 55px;
   text-align: right;
 }
-/* line 71, ../scss/custom.scss */
+/* line 72, ../scss/custom.scss */
 #top-bar #profile_pic {
   border-radius: 50%;
   margin-right: 10px;
   position: relative;
   bottom: 2px;
 }
-/* line 77, ../scss/custom.scss */
+/* line 78, ../scss/custom.scss */
 #top-bar #add_task {
   width: 55px;
   height: 55px;
@@ -93,7 +94,7 @@ body {
   background-image: -ms-linear-gradient(-90deg, #35c2ab 0%, #45e5cb 100%);
   background-image: linear-gradient(-180deg, #35c2ab 0%, #45e5cb 100%);
 }
-/* line 89, ../scss/custom.scss */
+/* line 90, ../scss/custom.scss */
 #top-bar #add_task span {
   font-size: 1rem;
   color: #FFFFFF;
@@ -103,26 +104,26 @@ body {
 /*-----------------------------------------------------------------------------------*/
 /*  2.  Landing Page
 /*-----------------------------------------------------------------------------------*/
-/* line 102, ../scss/custom.scss */
+/* line 103, ../scss/custom.scss */
 body {
   display: table;
 }
 
-/* line 106, ../scss/custom.scss */
+/* line 107, ../scss/custom.scss */
 #landing {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 110, ../scss/custom.scss */
+/* line 111, ../scss/custom.scss */
 #landing h1 {
   margin: 0;
 }
-/* line 112, ../scss/custom.scss */
+/* line 113, ../scss/custom.scss */
 #landing h1 img {
   width: 191px;
   height: 144px;
 }
-/* line 118, ../scss/custom.scss */
+/* line 119, ../scss/custom.scss */
 #landing h2 {
   font-family: "museo-sans",sans-serif;
   font-style: normal;
@@ -131,7 +132,7 @@ body {
   color: #7C7C7C;
   margin: 50px auto;
 }
-/* line 127, ../scss/custom.scss */
+/* line 128, ../scss/custom.scss */
 #landing #twitter_button {
   color: #FFFFFF;
   text-decoration: none;
@@ -151,24 +152,24 @@ body {
   -o-transition: all ease-in-out 0.1s;
   transition: all ease-in-out 0.1s;
 }
-/* line 145, ../scss/custom.scss */
+/* line 146, ../scss/custom.scss */
 #landing #twitter_button span {
   color: #FFFFFF;
   font-size: 1.1rem;
   margin-left: 8px;
 }
-/* line 150, ../scss/custom.scss */
+/* line 151, ../scss/custom.scss */
 #landing #twitter_button .icon-twitter {
   color: #FFFFFF;
   font-size: 1rem;
 }
-/* line 155, ../scss/custom.scss */
+/* line 156, ../scss/custom.scss */
 #landing #twitter_button:hover {
   background-color: #00B2F5;
   border: 1px solid #00B2F5;
   border-bottom: 2px solid #009DD9;
 }
-/* line 161, ../scss/custom.scss */
+/* line 162, ../scss/custom.scss */
 #landing #twitter_button:active {
   background-color: #00ACED;
   border: 1px solid #009DD9;
@@ -178,13 +179,13 @@ body {
 /*-----------------------------------------------------------------------------------*/
 /*  3.  To Do List Page
 /*-----------------------------------------------------------------------------------*/
-/* line 178, ../scss/custom.scss */
+/* line 179, ../scss/custom.scss */
 #container {
   height: 100%;
   background-color: #ECF0F1;
 }
 
-/* line 183, ../scss/custom.scss */
+/* line 184, ../scss/custom.scss */
 .bg_1 {
   background: url("../img/bg_1.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -194,7 +195,7 @@ body {
   background-attachment: fixed;
 }
 
-/* line 192, ../scss/custom.scss */
+/* line 193, ../scss/custom.scss */
 .bg_1_blur {
   background: url("../img/bg_1_blur.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -204,7 +205,7 @@ body {
   background-attachment: fixed;
 }
 
-/* line 201, ../scss/custom.scss */
+/* line 202, ../scss/custom.scss */
 .bg_2 {
   background: url("../img/bg_2.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -214,7 +215,7 @@ body {
   background-attachment: fixed;
 }
 
-/* line 210, ../scss/custom.scss */
+/* line 211, ../scss/custom.scss */
 .bg_2_blur {
   background: url("../img/bg_2_blur.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -224,7 +225,7 @@ body {
   background-attachment: fixed;
 }
 
-/* line 219, ../scss/custom.scss */
+/* line 220, ../scss/custom.scss */
 #todo-list .destroy {
   position: absolute;
   right: 5px;
@@ -236,17 +237,17 @@ body {
   background: url(../img/destroy.png) no-repeat;
 }
 
-/* line 230, ../scss/custom.scss */
+/* line 231, ../scss/custom.scss */
 #todo-list li:hover .destroy {
   display: block;
 }
 
-/* line 234, ../scss/custom.scss */
+/* line 235, ../scss/custom.scss */
 #todo-list .destroy:hover {
   background-position: 0 -20px;
 }
 
-/* line 238, ../scss/custom.scss */
+/* line 239, ../scss/custom.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "jaf-bernino-sans",sans-serif;
   font-style: normal;
@@ -271,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 */
-/* line 265, ../scss/custom.scss */
+/* line 266, ../scss/custom.scss */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "goal";
   font-style: normal;
@@ -297,25 +298,25 @@ h1, h2, h3, h4, h5, h6 {
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-/* line 296, ../scss/custom.scss */
+/* line 297, ../scss/custom.scss */
 .icon-ok:before {
   content: '\e800';
 }
 
 /* '' */
-/* line 297, ../scss/custom.scss */
+/* line 298, ../scss/custom.scss */
 .icon-plus-1:before {
   content: '\e803';
 }
 
 /* '' */
-/* line 298, ../scss/custom.scss */
+/* line 299, ../scss/custom.scss */
 .icon-twitter:before {
   content: '\e801';
 }
 
 /* '' */
-/* line 300, ../scss/custom.scss */
+/* line 301, ../scss/custom.scss */
 .mask {
   position: absolute;
   background: url("../img/bg.jpg") no-repeat;
@@ -332,11 +333,11 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
 }
 
-/* line 317, ../scss/custom.scss */
+/* line 318, ../scss/custom.scss */
 #write {
   position: relative;
 }
-/* line 319, ../scss/custom.scss */
+/* line 320, ../scss/custom.scss */
 #write input[type="text"] {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
@@ -366,16 +367,16 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 347, ../scss/custom.scss */
+/* line 348, ../scss/custom.scss */
 #write input[type="text"]:focus {
   outline: none;
 }
-/* line 349, ../scss/custom.scss */
+/* line 350, ../scss/custom.scss */
 #write input[type="text"]:focus + span {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 355, ../scss/custom.scss */
+/* line 356, ../scss/custom.scss */
 #write span {
   font-family: "jaf-bernino-sans",sans-serif;
   font-style: normal;
@@ -392,41 +393,41 @@ h1, h2, h3, h4, h5, h6 {
   transition: all ease 0.3s;
 }
 
-/* line 372, ../scss/custom.scss */
+/* line 373, ../scss/custom.scss */
 #box {
   margin-top: 0.9375rem;
 }
-/* line 374, ../scss/custom.scss */
+/* line 375, ../scss/custom.scss */
 #box #title {
   background-color: #27ae60;
   padding: 20px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 379, ../scss/custom.scss */
+/* line 380, ../scss/custom.scss */
 #box #title h2 {
   color: #FFFFFF;
   font-weight: 100;
 }
-/* line 384, ../scss/custom.scss */
+/* line 385, ../scss/custom.scss */
 #box .container {
   background-color: #FFFFFF;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 389, ../scss/custom.scss */
+/* line 390, ../scss/custom.scss */
 #box #list_item {
   background-color: #FFFFFF;
   color: #3A3A3A;
 }
-/* line 392, ../scss/custom.scss */
+/* line 393, ../scss/custom.scss */
 #box #list_item .item {
   border-bottom: 1px solid #e3e3e3;
   background-color: #27ae60;
   overflow: hidden;
   position: relative;
 }
-/* line 397, ../scss/custom.scss */
+/* line 398, ../scss/custom.scss */
 #box #list_item .item .item_content {
   padding: 1rem 20px;
   background-color: #FFFFFF;
@@ -438,19 +439,19 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: width 0.6s ease-in-out;
   transition: width 0.6s ease-in-out;
 }
-/* line 407, ../scss/custom.scss */
+/* line 408, ../scss/custom.scss */
 #box #list_item .item .item_content label {
   font-size: 20px;
 }
-/* line 410, ../scss/custom.scss */
+/* line 411, ../scss/custom.scss */
 #box #list_item .item .item_content:active {
   background-color: #FAFAFA;
 }
-/* line 414, ../scss/custom.scss */
+/* line 415, ../scss/custom.scss */
 #box #list_item .item .item_content_active {
   width: 85%;
 }
-/* line 417, ../scss/custom.scss */
+/* line 418, ../scss/custom.scss */
 #box #list_item .item .item_check {
   height: 100%;
   position: absolute;
@@ -462,14 +463,14 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: left 0.6s ease-in-out;
   transition: left 0.6s ease-in-out;
 }
-/* line 427, ../scss/custom.scss */
+/* line 428, ../scss/custom.scss */
 #box #list_item .item .item_check .text-center {
   display: table;
   position: absolute;
   height: 100%;
   width: 100%;
 }
-/* line 432, ../scss/custom.scss */
+/* line 433, ../scss/custom.scss */
 #box #list_item .item .item_check .text-center .icon-ok {
   display: table-cell;
   vertical-align: middle;
@@ -479,22 +480,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
-/* line 443, ../scss/custom.scss */
+/* line 444, ../scss/custom.scss */
 #box #list_item .item .item_check_active {
   left: 0;
 }
-/* line 446, ../scss/custom.scss */
+/* line 447, ../scss/custom.scss */
 #box #list_item .item:last-child {
   border: none;
 }
 
-/* line 453, ../scss/custom.scss */
+/* line 454, ../scss/custom.scss */
 hr {
   border: solid #FFFFFF;
   border-width: 1px 0 0;
 }
 
-/* line 458, ../scss/custom.scss */
+/* line 459, ../scss/custom.scss */
 .done-false {
   text-decoration: none;
   -webkit-transition: text-decoration ease 0.8s;
@@ -504,7 +505,7 @@ hr {
   transition: text-decoration ease 0.8s;
 }
 
-/* line 467, ../scss/custom.scss */
+/* line 468, ../scss/custom.scss */
 .done-true {
   text-decoration: line-through;
   -webkit-transition: text-decoration ease 0.8s;
@@ -515,7 +516,7 @@ hr {
   color: #b3b3b1;
 }
 
-/* line 478, ../scss/custom.scss */
+/* line 479, ../scss/custom.scss */
 ul {
   margin: 0;
   padding: 0;
@@ -523,68 +524,76 @@ ul {
   list-style-type: none;
 }
 
-/* line 486, ../scss/custom.scss */
+/* line 487, ../scss/custom.scss */
 .turquoise {
   background-color: #1abc9c !important;
 }
 
-/* line 490, ../scss/custom.scss */
+/* line 491, ../scss/custom.scss */
 .peter-river {
   background-color: #3498db !important;
 }
 
-/* line 494, ../scss/custom.scss */
+/* line 495, ../scss/custom.scss */
 .amethyst {
   background-color: #9b59b6 !important;
 }
 
-/* line 498, ../scss/custom.scss */
+/* line 499, ../scss/custom.scss */
 .wet-asphalt {
   background-color: #34495e !important;
 }
 
-/* line 502, ../scss/custom.scss */
+/* line 503, ../scss/custom.scss */
 .green-sea {
   background-color: #16a085 !important;
 }
 
-/* line 506, ../scss/custom.scss */
+/* line 507, ../scss/custom.scss */
 .nephritis {
   background-color: #27ae60 !important;
 }
 
-/* line 510, ../scss/custom.scss */
+/* line 511, ../scss/custom.scss */
 .belize-hole {
   background-color: #2980b9 !important;
 }
 
-/* line 514, ../scss/custom.scss */
+/* line 515, ../scss/custom.scss */
 .wisteria {
   background-color: #8e44ad !important;
 }
 
-/* line 518, ../scss/custom.scss */
+/* line 519, ../scss/custom.scss */
 .midnight-blue {
   background-color: #2c3e50 !important;
 }
 
-/* line 522, ../scss/custom.scss */
+/* line 523, ../scss/custom.scss */
 .sun-flower {
   background-color: #f1c40f !important;
 }
 
-/* line 526, ../scss/custom.scss */
+/* line 527, ../scss/custom.scss */
 .orange {
   background-color: #f39c12 !important;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 531, ../scss/custom.scss */
+  /* line 532, ../scss/custom.scss */
   #box {
     margin-top: 250px;
   }
 
   /* line 535, ../scss/custom.scss */
+  #top-bar .row h1 {
+    text-align: center;
+    line-height: 1;
+    font-size: 2.75rem;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 545, ../scss/custom.scss */
   .top_bar_user #username {
     display: inline-block !important;
   }

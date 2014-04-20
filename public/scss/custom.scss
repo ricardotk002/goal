@@ -66,6 +66,7 @@ body {
 		}
 	}
 	.top_bar_user{
+		line-height: 55px;
 		text-align: right;
 	}
 	#profile_pic{
@@ -528,12 +529,23 @@ list-style-type: none;
 }
 
 @media only screen and (min-width: 40.063em) { 
+	
 	#box {
 	margin-top: 250px;
 	}
+	#top-bar .row h1 {
+		text-align: center;
+		line-height: 1;
+		font-size: 2.75rem;
+	}
+}
+
+@media only screen and (min-width: 64.063em) { 
+	
 	.top_bar_user{
 		#username{
 			display: inline-block !important;
 		}
 	}
+
 }
