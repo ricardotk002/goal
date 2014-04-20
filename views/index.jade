@@ -10,8 +10,9 @@ block content
           img#profile_pic(src='/img/profile_pic.png')
           span#username #{user.twitter.displayName}
             a.small(href='/logout', style='color: #ccc;')  (logout)
-      div#add_task
-        span.icon-plus-1
+      a(href='/')
+        div#add_task
+          span.icon-plus-1
   div#container
     div.row(ng-controller='MainController')
       div.small-12.medium-12.large-6.large-centered.columns
