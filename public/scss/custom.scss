@@ -61,22 +61,34 @@ body {
 			font-family: "museo-sans",sans-serif;
 			font-size: 1rem;
 			font-weight: 300;
-			float: right;
 			line-height: 55px;
 		}
+	}
+	.top_bar_user{
+		text-align: right;
+	}
+	#profile_pic{
+		border-radius: 50%;
+		margin-right: 10px;
+		position: relative;
+		bottom: 2px;
 	}
 	#add_task{
 		width: 55px;
 		height: 55px;
 		background: #35C2AB;
+		position: absolute;
+		right: 0px;
 		background-image: -o-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
 		background-image: -moz-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
 		background-image: -webkit-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
 		background-image: -ms-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
 		background-image: linear-gradient(-180deg, #35C2AB 0%, #45E5CB 100%);
+		text-align: center;
 		span{
 			font-size: 1rem;
 			color: #FFFFFF;
+			line-height: 55px;
 		}
 	}
 }

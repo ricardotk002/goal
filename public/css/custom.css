@@ -65,49 +65,63 @@ body {
   font-family: "museo-sans",sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  float: right;
   line-height: 55px;
 }
-/* line 68, ../scss/custom.scss */
+/* line 67, ../scss/custom.scss */
+#top-bar .top_bar_user {
+  text-align: right;
+}
+/* line 70, ../scss/custom.scss */
+#top-bar #profile_pic {
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  bottom: 2px;
+}
+/* line 76, ../scss/custom.scss */
 #top-bar #add_task {
   width: 55px;
   height: 55px;
   background: #35C2AB;
+  position: absolute;
+  right: 0px;
   background-image: -o-linear-gradient(-90deg, #35c2ab 0%, #45e5cb 100%);
   background-image: -moz-linear-gradient(-90deg, #35c2ab 0%, #45e5cb 100%);
   background-image: -webkit-linear-gradient(-90deg, #35c2ab 0%, #45e5cb 100%);
   background-image: -ms-linear-gradient(-90deg, #35c2ab 0%, #45e5cb 100%);
   background-image: linear-gradient(-180deg, #35c2ab 0%, #45e5cb 100%);
+  text-align: center;
 }
-/* line 77, ../scss/custom.scss */
+/* line 88, ../scss/custom.scss */
 #top-bar #add_task span {
   font-size: 1rem;
   color: #FFFFFF;
+  line-height: 55px;
 }
 
 /*-----------------------------------------------------------------------------------*/
 /*  2.  Landing Page
 /*-----------------------------------------------------------------------------------*/
-/* line 89, ../scss/custom.scss */
+/* line 101, ../scss/custom.scss */
 body {
   display: table;
 }
 
-/* line 93, ../scss/custom.scss */
+/* line 105, ../scss/custom.scss */
 #landing {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 97, ../scss/custom.scss */
+/* line 109, ../scss/custom.scss */
 #landing h1 {
   margin: 0;
 }
-/* line 99, ../scss/custom.scss */
+/* line 111, ../scss/custom.scss */
 #landing h1 img {
   width: 191px;
   height: 144px;
 }
-/* line 105, ../scss/custom.scss */
+/* line 117, ../scss/custom.scss */
 #landing h2 {
   font-family: "museo-sans",sans-serif;
   font-style: normal;
@@ -116,7 +130,7 @@ body {
   color: #7C7C7C;
   margin: 50px auto;
 }
-/* line 114, ../scss/custom.scss */
+/* line 126, ../scss/custom.scss */
 #landing #twitter_button {
   color: #FFFFFF;
   text-decoration: none;
@@ -136,24 +150,24 @@ body {
   -o-transition: all ease-in-out 0.1s;
   transition: all ease-in-out 0.1s;
 }
-/* line 132, ../scss/custom.scss */
+/* line 144, ../scss/custom.scss */
 #landing #twitter_button span {
   color: #FFFFFF;
   font-size: 1.1rem;
   margin-left: 8px;
 }
-/* line 137, ../scss/custom.scss */
+/* line 149, ../scss/custom.scss */
 #landing #twitter_button .icon-twitter {
   color: #FFFFFF;
   font-size: 1rem;
 }
-/* line 142, ../scss/custom.scss */
+/* line 154, ../scss/custom.scss */
 #landing #twitter_button:hover {
   background-color: #00B2F5;
   border: 1px solid #00B2F5;
   border-bottom: 2px solid #009DD9;
 }
-/* line 148, ../scss/custom.scss */
+/* line 160, ../scss/custom.scss */
 #landing #twitter_button:active {
   background-color: #00ACED;
   border: 1px solid #009DD9;
@@ -163,13 +177,13 @@ body {
 /*-----------------------------------------------------------------------------------*/
 /*  3.  To Do List Page
 /*-----------------------------------------------------------------------------------*/
-/* line 165, ../scss/custom.scss */
+/* line 177, ../scss/custom.scss */
 #container {
   height: 100%;
   background-color: #ECF0F1;
 }
 
-/* line 170, ../scss/custom.scss */
+/* line 182, ../scss/custom.scss */
 .bg_1 {
   background: url("../img/bg_1.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -179,7 +193,7 @@ body {
   background-attachment: fixed;
 }
 
-/* line 179, ../scss/custom.scss */
+/* line 191, ../scss/custom.scss */
 .bg_1_blur {
   background: url("../img/bg_1_blur.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -189,7 +203,7 @@ body {
   background-attachment: fixed;
 }
 
-/* line 188, ../scss/custom.scss */
+/* line 200, ../scss/custom.scss */
 .bg_2 {
   background: url("../img/bg_2.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -199,7 +213,7 @@ body {
   background-attachment: fixed;
 }
 
-/* line 197, ../scss/custom.scss */
+/* line 209, ../scss/custom.scss */
 .bg_2_blur {
   background: url("../img/bg_2_blur.jpg") no-repeat;
   -webkit-background-size: cover;
@@ -209,7 +223,7 @@ body {
   background-attachment: fixed;
 }
 
-/* line 206, ../scss/custom.scss */
+/* line 218, ../scss/custom.scss */
 #todo-list .destroy {
   position: absolute;
   right: 5px;
@@ -221,17 +235,17 @@ body {
   background: url(../img/destroy.png) no-repeat;
 }
 
-/* line 217, ../scss/custom.scss */
+/* line 229, ../scss/custom.scss */
 #todo-list li:hover .destroy {
   display: block;
 }
 
-/* line 221, ../scss/custom.scss */
+/* line 233, ../scss/custom.scss */
 #todo-list .destroy:hover {
   background-position: 0 -20px;
 }
 
-/* line 225, ../scss/custom.scss */
+/* line 237, ../scss/custom.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "jaf-bernino-sans",sans-serif;
   font-style: normal;
@@ -256,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 */
-/* line 252, ../scss/custom.scss */
+/* line 264, ../scss/custom.scss */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "goal";
   font-style: normal;
@@ -282,25 +296,25 @@ h1, h2, h3, h4, h5, h6 {
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-/* line 283, ../scss/custom.scss */
+/* line 295, ../scss/custom.scss */
 .icon-ok:before {
   content: '\e800';
 }
 
 /* '' */
-/* line 284, ../scss/custom.scss */
+/* line 296, ../scss/custom.scss */
 .icon-plus-1:before {
   content: '\e803';
 }
 
 /* '' */
-/* line 285, ../scss/custom.scss */
+/* line 297, ../scss/custom.scss */
 .icon-twitter:before {
   content: '\e801';
 }
 
 /* '' */
-/* line 287, ../scss/custom.scss */
+/* line 299, ../scss/custom.scss */
 .mask {
   position: absolute;
   background: url("../img/bg.jpg") no-repeat;
@@ -317,11 +331,11 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
 }
 
-/* line 304, ../scss/custom.scss */
+/* line 316, ../scss/custom.scss */
 #write {
   position: relative;
 }
-/* line 306, ../scss/custom.scss */
+/* line 318, ../scss/custom.scss */
 #write input[type="text"] {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
@@ -351,16 +365,16 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 334, ../scss/custom.scss */
+/* line 346, ../scss/custom.scss */
 #write input[type="text"]:focus {
   outline: none;
 }
-/* line 336, ../scss/custom.scss */
+/* line 348, ../scss/custom.scss */
 #write input[type="text"]:focus + span {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 342, ../scss/custom.scss */
+/* line 354, ../scss/custom.scss */
 #write span {
   font-family: "jaf-bernino-sans",sans-serif;
   font-style: normal;
@@ -377,41 +391,41 @@ h1, h2, h3, h4, h5, h6 {
   transition: all ease 0.3s;
 }
 
-/* line 359, ../scss/custom.scss */
+/* line 371, ../scss/custom.scss */
 #box {
   margin-top: 0.9375rem;
 }
-/* line 361, ../scss/custom.scss */
+/* line 373, ../scss/custom.scss */
 #box #title {
   background-color: #27ae60;
   padding: 20px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 366, ../scss/custom.scss */
+/* line 378, ../scss/custom.scss */
 #box #title h2 {
   color: #FFFFFF;
   font-weight: 100;
 }
-/* line 371, ../scss/custom.scss */
+/* line 383, ../scss/custom.scss */
 #box .container {
   background-color: #FFFFFF;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 376, ../scss/custom.scss */
+/* line 388, ../scss/custom.scss */
 #box #list_item {
   background-color: #FFFFFF;
   color: #3A3A3A;
 }
-/* line 379, ../scss/custom.scss */
+/* line 391, ../scss/custom.scss */
 #box #list_item .item {
   border-bottom: 1px solid #e3e3e3;
   background-color: #27ae60;
   overflow: hidden;
   position: relative;
 }
-/* line 384, ../scss/custom.scss */
+/* line 396, ../scss/custom.scss */
 #box #list_item .item .item_content {
   padding: 1rem 20px;
   background-color: #FFFFFF;
@@ -423,19 +437,19 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: width 0.6s ease-in-out;
   transition: width 0.6s ease-in-out;
 }
-/* line 394, ../scss/custom.scss */
+/* line 406, ../scss/custom.scss */
 #box #list_item .item .item_content label {
   font-size: 20px;
 }
-/* line 397, ../scss/custom.scss */
+/* line 409, ../scss/custom.scss */
 #box #list_item .item .item_content:active {
   background-color: #FAFAFA;
 }
-/* line 401, ../scss/custom.scss */
+/* line 413, ../scss/custom.scss */
 #box #list_item .item .item_content_active {
   width: 85%;
 }
-/* line 404, ../scss/custom.scss */
+/* line 416, ../scss/custom.scss */
 #box #list_item .item .item_check {
   height: 100%;
   position: absolute;
@@ -447,14 +461,14 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: left 0.6s ease-in-out;
   transition: left 0.6s ease-in-out;
 }
-/* line 414, ../scss/custom.scss */
+/* line 426, ../scss/custom.scss */
 #box #list_item .item .item_check .text-center {
   display: table;
   position: absolute;
   height: 100%;
   width: 100%;
 }
-/* line 419, ../scss/custom.scss */
+/* line 431, ../scss/custom.scss */
 #box #list_item .item .item_check .text-center .icon-ok {
   display: table-cell;
   vertical-align: middle;
@@ -464,22 +478,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
-/* line 430, ../scss/custom.scss */
+/* line 442, ../scss/custom.scss */
 #box #list_item .item .item_check_active {
   left: 0;
 }
-/* line 433, ../scss/custom.scss */
+/* line 445, ../scss/custom.scss */
 #box #list_item .item:last-child {
   border: none;
 }
 
-/* line 440, ../scss/custom.scss */
+/* line 452, ../scss/custom.scss */
 hr {
   border: solid #FFFFFF;
   border-width: 1px 0 0;
 }
 
-/* line 445, ../scss/custom.scss */
+/* line 457, ../scss/custom.scss */
 .done-false {
   text-decoration: none;
   -webkit-transition: text-decoration ease 0.8s;
@@ -489,7 +503,7 @@ hr {
   transition: text-decoration ease 0.8s;
 }
 
-/* line 454, ../scss/custom.scss */
+/* line 466, ../scss/custom.scss */
 .done-true {
   text-decoration: line-through;
   -webkit-transition: text-decoration ease 0.8s;
@@ -500,7 +514,7 @@ hr {
   color: #b3b3b1;
 }
 
-/* line 465, ../scss/custom.scss */
+/* line 477, ../scss/custom.scss */
 ul {
   margin: 0;
   padding: 0;
@@ -508,63 +522,63 @@ ul {
   list-style-type: none;
 }
 
-/* line 473, ../scss/custom.scss */
+/* line 485, ../scss/custom.scss */
 .turquoise {
   background-color: #1abc9c !important;
 }
 
-/* line 477, ../scss/custom.scss */
+/* line 489, ../scss/custom.scss */
 .peter-river {
   background-color: #3498db !important;
 }
 
-/* line 481, ../scss/custom.scss */
+/* line 493, ../scss/custom.scss */
 .amethyst {
   background-color: #9b59b6 !important;
 }
 
-/* line 485, ../scss/custom.scss */
+/* line 497, ../scss/custom.scss */
 .wet-asphalt {
   background-color: #34495e !important;
 }
 
-/* line 489, ../scss/custom.scss */
+/* line 501, ../scss/custom.scss */
 .green-sea {
   background-color: #16a085 !important;
 }
 
-/* line 493, ../scss/custom.scss */
+/* line 505, ../scss/custom.scss */
 .nephritis {
   background-color: #27ae60 !important;
 }
 
-/* line 497, ../scss/custom.scss */
+/* line 509, ../scss/custom.scss */
 .belize-hole {
   background-color: #2980b9 !important;
 }
 
-/* line 501, ../scss/custom.scss */
+/* line 513, ../scss/custom.scss */
 .wisteria {
   background-color: #8e44ad !important;
 }
 
-/* line 505, ../scss/custom.scss */
+/* line 517, ../scss/custom.scss */
 .midnight-blue {
   background-color: #2c3e50 !important;
 }
 
-/* line 509, ../scss/custom.scss */
+/* line 521, ../scss/custom.scss */
 .sun-flower {
   background-color: #f1c40f !important;
 }
 
-/* line 513, ../scss/custom.scss */
+/* line 525, ../scss/custom.scss */
 .orange {
   background-color: #f39c12 !important;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 518, ../scss/custom.scss */
+  /* line 530, ../scss/custom.scss */
   #box {
     margin-top: 250px;
   }
