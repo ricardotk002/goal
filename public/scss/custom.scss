@@ -57,6 +57,7 @@ body {
 			}
 		}
 		#username{
+			display: none;
 			color: #FFFFFF;
 			font-family: "museo-sans",sans-serif;
 			font-size: 1rem;
@@ -76,7 +77,7 @@ body {
 	#add_task{
 		width: 55px;
 		height: 55px;
-		background: #35C2AB;
+		background-color: #45e5cb;
 		position: absolute;
 		right: 0px;
 		background-image: -o-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
@@ -539,6 +540,9 @@ list-style-type: none;
 	#box {
 	margin-top: 250px;
 	}
+	.top_bar_user{
+		#username{
+			display: inline-block;
+		}
+	}
 }
-
-
