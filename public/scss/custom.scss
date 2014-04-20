@@ -29,6 +29,58 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+#top-bar{
+	position: fixed;
+	padding-right: 55px;
+	height: 55px;
+	width: 100%;
+	background: #2E3435;
+	z-index: 999;
+	background-image: -o-linear-gradient(-90deg, #2E3435 0%, #3E4647 100%);
+	background-image: -moz-linear-gradient(-90deg, #2E3435 0%, #3E4647 100%);
+	background-image: -webkit-linear-gradient(-90deg, #2E3435 0%, #3E4647 100%);
+	background-image: -ms-linear-gradient(-90deg, #2E3435 0%, #3E4647 100%);
+	background-image: linear-gradient(-180deg, #2E3435 0%, #3E4647 100%);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	.row{
+		max-width: none;
+		h1{
+			text-align: center;
+			line-height: 1;
+			a{
+				img{
+					width: 91px;
+					height: 17px;
+				}
+			}
+		}
+		#username{
+			color: #FFFFFF;
+			font-family: "museo-sans",sans-serif;
+			font-size: 1rem;
+			font-weight: 300;
+			float: right;
+			line-height: 55px;
+		}
+	}
+	#add_task{
+		width: 55px;
+		height: 55px;
+		background: #35C2AB;
+		background-image: -o-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
+		background-image: -moz-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
+		background-image: -webkit-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
+		background-image: -ms-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
+		background-image: linear-gradient(-180deg, #35C2AB 0%, #45E5CB 100%);
+		span{
+			font-size: 1rem;
+			color: #FFFFFF;
+		}
+	}
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 /*  2.  Landing Page
@@ -45,8 +97,8 @@ body{
 	h1{
 		margin: 0;
 		img{
-			width: 180px;
-			height: 137px;
+			width: 191px;
+			height: 144px;
 		}
 	}
 
@@ -63,7 +115,7 @@ body{
 		color: #FFFFFF;
 		text-decoration: none;
 		font-size: 1.1rem;
-		padding: 15px 40px;
+		padding: 15px 30px;
 		border-radius: 50px;
 		background-color: #00ACED;
 		border: 1px solid #009DD9;
@@ -77,6 +129,15 @@ body{
 		-ms-transition: all ease-in-out 01s;
 		-o-transition: all ease-in-out 0.1s;
 		transition: all ease-in-out 0.1s;
+		span{
+			color: #FFFFFF;
+			font-size: 1.1rem;
+			margin-left: 8px;
+		}
+		.icon-twitter{
+			color: #FFFFFF;
+			font-size: 1rem;
+		}
 	}
 	#twitter_button:hover{
 		background-color: #00B2F5;
@@ -100,27 +161,10 @@ body{
 
 
 
-#todo-list .destroy {
-position: absolute;
-right: 5px;
-top: 20px;
-display: none;
-cursor: pointer;
-width: 20px;
-height: 20px;
-background: url(../img/destroy.png) no-repeat;
-}
-
-#todo-list li:hover .destroy {
-  display: block;
-}
-
-#todo-list .destroy:hover {
-  background-position: 0 -20px;
-}
 
 #container{
 	height: 100%;
+	background-color: #ECF0F1;
 }
 
 .bg_1{
@@ -159,6 +203,25 @@ background: url(../img/destroy.png) no-repeat;
 	background-attachment: fixed;
 }
 
+#todo-list .destroy {
+position: absolute;
+right: 5px;
+top: 20px;
+display: none;
+cursor: pointer;
+width: 20px;
+height: 20px;
+background: url(../img/destroy.png) no-repeat;
+}
+
+#todo-list li:hover .destroy {
+  display: block;
+}
+
+#todo-list .destroy:hover {
+  background-position: 0 -20px;
+}
+
 h1,h2,h3,h4,h5,h6{
 	font-family: "jaf-bernino-sans",sans-serif;
 	font-style: normal;
@@ -167,11 +230,11 @@ h1,h2,h3,h4,h5,h6{
 
 @font-face {
   font-family: 'goal';
-  src: url('../font/goal.eot?20539058');
-  src: url('../font/goal.eot?20539058#iefix') format('embedded-opentype'),
-       url('../font/goal.woff?20539058') format('woff'),
-       url('../font/goal.ttf?20539058') format('truetype'),
-       url('../font/goal.svg?20539058#goal') format('svg');
+  src: url('../font/goal.eot?40247410');
+  src: url('../font/goal.eot?40247410#iefix') format('embedded-opentype'),
+       url('../font/goal.woff?40247410') format('woff'),
+       url('../font/goal.ttf?40247410') format('truetype'),
+       url('../font/goal.svg?40247410#goal') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -181,7 +244,7 @@ h1,h2,h3,h4,h5,h6{
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'goal';
-    src: url('../font/goal.svg?20539058#goal') format('svg');
+    src: url('../font/goal.svg?40247410#goal') format('svg');
   }
 }
 */
@@ -218,6 +281,7 @@ h1,h2,h3,h4,h5,h6{
 }
  
 .icon-ok:before { content: '\e800'; } /* '' */
+.icon-plus-1:before { content: '\e803'; } /* '' */
 .icon-twitter:before { content: '\e801'; } /* '' */
 
 .mask{
