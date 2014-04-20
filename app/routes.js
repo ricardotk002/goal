@@ -11,6 +11,8 @@ module.exports = function(app, passport) {
 
     // GET /landing
     app.get ('/landing', function(req, res) {
+        if(req.user)
+            res.render('/')
         res.render ('landing');
     });
 
