@@ -85,10 +85,22 @@ body {
 		background-image: -ms-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
 		background-image: linear-gradient(-180deg, #35C2AB 0%, #45E5CB 100%);
 		text-align: center;
+		-webkit-transition: background-image ease-in-out 0.25s;
+		-moz-transition: background-image ease-in-out 0.25s;
+		-ms-transition: background-image ease-in-out 0.25s;
+		-o-transition: background-image ease-in-out 0.25s;
+		transition: background-image ease-in-out 0.25s;
 		span{
 			font-size: 1rem;
 			color: #FFFFFF;
 			line-height: 55px;
+		}
+		&:hover{
+			background-image: -o-linear-gradient(-90deg, #45E5CB 0%, #4DFFE2 100%);
+			background-image: -moz-linear-gradient(-90deg, #45E5CB 0%, #4DFFE2 100%);
+			background-image: -webkit-linear-gradient(-90deg, #45E5CB 0%, #4DFFE2 100%);
+			background-image: -ms-linear-gradient(-90deg, #45E5CB 0%, #4DFFE2 100%);
+			background-image: linear-gradient(-180deg, #45E5CB 0%, #4DFFE2 100%);
 		}
 	}
 }
