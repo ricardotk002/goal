@@ -1,8 +1,8 @@
 extends layout
 
 block content
-  nav#top-nav
-    h1: a(href='/') corona
+  nav#top-bar
+    h1: a(href='/'): img(src='/img/top_bar_logo@2x.png')
     p(style='font-size: 12px; margin-bottom:0; float: right; color: #FFFFFF; position: relative; top: 12px; right: 5px;}') #{user.twitter.displayName}
       a.small(href='/logout', style='color: #ccc;')  (logout)
   div#container

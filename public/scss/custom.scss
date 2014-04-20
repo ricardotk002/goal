@@ -29,12 +29,17 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-#top-nav{
+#top-bar{
 	position: fixed;
-	height: 50px;
+	height: 55px;
 	width: 100%;
-	background: #328099;
+	background: #2E3435;
 	z-index: 999;
+	background-image: -o-linear-gradient(-90deg, #2E3435 0%, #3E4647 100%);
+	background-image: -moz-linear-gradient(-90deg, #2E3435 0%, #3E4647 100%);
+	background-image: -webkit-linear-gradient(-90deg, #2E3435 0%, #3E4647 100%);
+	background-image: -ms-linear-gradient(-90deg, #2E3435 0%, #3E4647 100%);
+	background-image: linear-gradient(-180deg, #2E3435 0%, #3E4647 100%);
 	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
@@ -44,7 +49,10 @@ body {
 		left: 47%;
 		font-size: 2rem;
 		a{
-			color: #FFFFFF;
+			img{
+				width:17px;
+				height: 91px;
+			}
 		}
 	}
 }
@@ -65,8 +73,8 @@ body{
 	h1{
 		margin: 0;
 		img{
-			width: 180px;
-			height: 137px;
+			width: 191px;
+			height: 144px;
 		}
 	}
 
