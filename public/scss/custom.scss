@@ -43,12 +43,25 @@ body {
 	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-	h1{
-		text-align: center;
-		a{
-			img{
-				width: 91px;
-				height: 17px;
+	.row{
+		max-width: none;
+		h1{
+			text-align: center;
+			line-height: 1;
+			a{
+				img{
+					width: 91px;
+					height: 17px;
+				}
+			}
+		}
+		#username{
+			span{
+				font-family: "museo-sans",sans-serif;
+				font-size: 1rem;
+				font-weight: 300;
+				float: right;
+				line-height: 55px;
 			}
 		}
 	}
