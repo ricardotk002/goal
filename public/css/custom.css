@@ -342,7 +342,7 @@ h1, h2, h3, h4, h5, h6 {
 #write {
   width: 100%;
 }
-/* line 327, ../scss/custom.scss */
+/* line 325, ../scss/custom.scss */
 #write input[type="text"] {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
@@ -369,16 +369,16 @@ h1, h2, h3, h4, h5, h6 {
   background: #FDFDFD;
   border: none;
 }
-/* line 352, ../scss/custom.scss */
+/* line 350, ../scss/custom.scss */
 #write input[type="text"]:focus {
   outline: none;
 }
-/* line 354, ../scss/custom.scss */
+/* line 352, ../scss/custom.scss */
 #write input[type="text"]:focus + span {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 360, ../scss/custom.scss */
+/* line 358, ../scss/custom.scss */
 #write span {
   font-family: "jaf-bernino-sans",sans-serif;
   font-style: normal;
@@ -395,32 +395,32 @@ h1, h2, h3, h4, h5, h6 {
   transition: all ease 0.3s;
 }
 
-/* line 377, ../scss/custom.scss */
+/* line 375, ../scss/custom.scss */
 #box {
-  margin-top: 8.9375rem;
+  margin-top: 2rem;
 }
-/* line 379, ../scss/custom.scss */
+/* line 377, ../scss/custom.scss */
 #box #title {
   background-color: #27ae60;
   padding: 20px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 384, ../scss/custom.scss */
+/* line 382, ../scss/custom.scss */
 #box #title h2 {
   color: #FFFFFF;
   font-weight: 100;
 }
-/* line 389, ../scss/custom.scss */
+/* line 387, ../scss/custom.scss */
 #box .container {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 393, ../scss/custom.scss */
+/* line 391, ../scss/custom.scss */
 #box #list_item {
   color: #3A3A3A;
 }
-/* line 395, ../scss/custom.scss */
+/* line 393, ../scss/custom.scss */
 #box #list_item .item {
   background-color: #27ae60;
   overflow: hidden;
@@ -431,7 +431,7 @@ h1, h2, h3, h4, h5, h6 {
   border-right: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
 }
-/* line 404, ../scss/custom.scss */
+/* line 402, ../scss/custom.scss */
 #box #list_item .item .item_content {
   padding: 1rem 20px;
   background-color: #FFFFFF;
@@ -443,15 +443,15 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: width ease 0.4s;
   transition: width ease 0.4s;
 }
-/* line 414, ../scss/custom.scss */
+/* line 412, ../scss/custom.scss */
 #box #list_item .item .item_content label {
   font-size: 20px;
 }
-/* line 418, ../scss/custom.scss */
+/* line 416, ../scss/custom.scss */
 #box #list_item .item .item_content_active {
   width: 85%;
 }
-/* line 421, ../scss/custom.scss */
+/* line 419, ../scss/custom.scss */
 #box #list_item .item .item_check {
   height: 100%;
   position: absolute;
@@ -463,14 +463,14 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: left ease 0.4s;
   transition: left ease 0.4s;
 }
-/* line 431, ../scss/custom.scss */
+/* line 429, ../scss/custom.scss */
 #box #list_item .item .item_check .text-center {
   display: table;
   position: absolute;
   height: 100%;
   width: 100%;
 }
-/* line 436, ../scss/custom.scss */
+/* line 434, ../scss/custom.scss */
 #box #list_item .item .item_check .text-center .icon-ok {
   display: table-cell;
   vertical-align: middle;
@@ -480,18 +480,18 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
-/* line 447, ../scss/custom.scss */
+/* line 445, ../scss/custom.scss */
 #box #list_item .item .item_check_active {
   left: 0;
 }
 
-/* line 454, ../scss/custom.scss */
+/* line 452, ../scss/custom.scss */
 hr {
   border: solid #FFFFFF;
   border-width: 1px 0 0;
 }
 
-/* line 459, ../scss/custom.scss */
+/* line 457, ../scss/custom.scss */
 .done-false {
   text-decoration: none;
   -webkit-transition: text-decoration ease 0.8s;
@@ -501,7 +501,7 @@ hr {
   transition: text-decoration ease 0.8s;
 }
 
-/* line 468, ../scss/custom.scss */
+/* line 466, ../scss/custom.scss */
 .done-true {
   text-decoration: line-through;
   -webkit-transition: text-decoration ease 0.8s;
@@ -512,7 +512,7 @@ hr {
   color: #b3b3b1;
 }
 
-/* line 479, ../scss/custom.scss */
+/* line 477, ../scss/custom.scss */
 ul {
   margin: 0;
   padding: 0;
@@ -520,81 +520,81 @@ ul {
   list-style-type: none;
 }
 
-/* line 487, ../scss/custom.scss */
+/* line 485, ../scss/custom.scss */
 .turquoise {
   background-color: #1abc9c !important;
 }
 
-/* line 491, ../scss/custom.scss */
+/* line 489, ../scss/custom.scss */
 .peter-river {
   background-color: #3498db !important;
 }
 
-/* line 495, ../scss/custom.scss */
+/* line 493, ../scss/custom.scss */
 .amethyst {
   background-color: #9b59b6 !important;
 }
 
-/* line 499, ../scss/custom.scss */
+/* line 497, ../scss/custom.scss */
 .wet-asphalt {
   background-color: #34495e !important;
 }
 
-/* line 503, ../scss/custom.scss */
+/* line 501, ../scss/custom.scss */
 .green-sea {
   background-color: #16a085 !important;
 }
 
-/* line 507, ../scss/custom.scss */
+/* line 505, ../scss/custom.scss */
 .nephritis {
   background-color: #27ae60 !important;
 }
 
-/* line 511, ../scss/custom.scss */
+/* line 509, ../scss/custom.scss */
 .belize-hole {
   background-color: #2980b9 !important;
 }
 
-/* line 515, ../scss/custom.scss */
+/* line 513, ../scss/custom.scss */
 .wisteria {
   background-color: #8e44ad !important;
 }
 
-/* line 519, ../scss/custom.scss */
+/* line 517, ../scss/custom.scss */
 .midnight-blue {
   background-color: #2c3e50 !important;
 }
 
-/* line 523, ../scss/custom.scss */
+/* line 521, ../scss/custom.scss */
 .sun-flower {
   background-color: #f1c40f !important;
 }
 
-/* line 527, ../scss/custom.scss */
+/* line 525, ../scss/custom.scss */
 .orange {
   background-color: #f39c12 !important;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 533, ../scss/custom.scss */
+  /* line 531, ../scss/custom.scss */
   #box {
-    margin-top: 250px;
+    margin-top: 4rem;
   }
 
-  /* line 536, ../scss/custom.scss */
+  /* line 534, ../scss/custom.scss */
   #top-bar .row h1 {
     text-align: center;
     line-height: 1;
     font-size: 2.75rem;
   }
 
-  /* line 541, ../scss/custom.scss */
+  /* line 539, ../scss/custom.scss */
   .top_bar_user {
     display: block !important;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 549, ../scss/custom.scss */
+  /* line 547, ../scss/custom.scss */
   .top_bar_user #username {
     display: inline-block !important;
   }

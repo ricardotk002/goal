@@ -321,8 +321,6 @@ h1,h2,h3,h4,h5,h6{
 
 
 #write{
-	// position: relative;
-	// top:55px;
 	width: 100%;
 	input[type="text"]{
 		-webkit-appearance: none;
@@ -375,7 +373,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #box{
-	margin-top: 8.9375rem;
+	margin-top: 2rem;
 	#title{
 		background-color: #27ae60;
 		padding: 20px;
@@ -531,7 +529,7 @@ list-style-type: none;
 @media only screen and (min-width: 40.063em) { 
 
 	#box {
-	margin-top: 250px;
+		margin-top: 4rem;
 	}
 	#top-bar .row h1 {
 		text-align: center;
