@@ -11,10 +11,10 @@ module.exports = function(app, passport) {
 
     // GET /landing
     app.get ('/landing', function(req, res) {
-        if(req.user)
-            res.render('/')
+        if(req.isAuthenticated())
+            res.redirect('/');
         else
-            res.render ('landing');
+            res.render('landing');
     });
 
 // auth
@@ -47,7 +47,6 @@ module.exports = function(app, passport) {
     });
 
     app.post('/api/user/todo', isLoggedInApi, function(req, res) {
-        console.log('user.id + ' + req.user._id);
         User.findByIdAndUpdate(req.user._id,
             {
                 $push: { 
@@ -57,7 +56,6 @@ module.exports = function(app, passport) {
             function(err, user) {
                 if(err)
                     res.send(err);
-                console.log('user + ' + user);
                 res.json(user.todos);
             });
     });

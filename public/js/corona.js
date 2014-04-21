@@ -1,6 +1,7 @@
 var app = angular.module('corona', []);
 
-app.controller('MainController', function($scope, $http) {
+app.controller('MainController', function($scope, $http, $filter) {
+    $scope.todos = [];
     $scope.date = new Date();
     $scope.formData = {};
 
@@ -25,8 +26,8 @@ app.controller('MainController', function($scope, $http) {
             });
     };
 
-    $scope.deleteTodo = function(id) {
-        $http.delete('/api/user/todo/' + id)
+    $scope.deleteTodo = function(todo_id) {
+        $http.delete('/api/user/todo/' + todo_id)
             .success(function(data) {
                 $scope.formData = {};
                 $scope.todos = data;
@@ -37,8 +38,9 @@ app.controller('MainController', function($scope, $http) {
             });
     };
 
-    $scope.toggleDone = function(id) {
-        $http.put('/api/user/todo/' + id + '/toggleDone')
+    $scope.toggleDone = function(todo_id, index) {
+        $scope.todos[index].done = !$scope.todos[index].done;
+        $http.put('/api/user/todo/' + todo_id + '/toggleDone')
             .success(function(data) {
                 $scope.todos = data;
             })

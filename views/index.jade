@@ -7,7 +7,7 @@ block content
          h1: a(href='/'): img(src='/img/top_bar_logo@2x.png')
       div.small-3.medium-4.large-4.columns
         div.top_bar_user
-          img#profile_pic(src='#{user.twitter.profileImageURL}')
+          img#profile_pic(src='/img/profile_pic.png')
           span#username #{user.twitter.displayName}
             a.small(href='/logout', style='color: #ccc;')  (logout)
       a(href='/')
@@ -30,9 +30,9 @@ block content
                   div.item_check(ng-class="{item_check_active: todo.done}")
                     div.text-center
                       i.icon-ok
-                  div.view.item_content(ng-click='toggleDone(todo._id); $event.stopPropagation();', ng-class="{item_content_active: todo.done}")
+                  div.view.item_content(ng-click='toggleDone(todo._id, $index); $event.stopPropagation();', ng-class="{item_content_active: todo.done}")
                     label {{ todo.text }}
-                    a.destroy(ng-click='deleteTodo(todo._id)')
+                    a.destroy(ng-click='deleteTodo(todo._id); $event.stopPropagation();')
 
                   //- input.edit(type='text', value='{{ todo.text }}')
 
