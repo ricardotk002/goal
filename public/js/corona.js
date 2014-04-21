@@ -38,9 +38,9 @@ app.controller('MainController', function($scope, $http, $filter) {
     $scope.toggleDone = function(todo_id, index) {
         $scope.todos[index].done = !$scope.todos[index].done;
         $http.put('/api/user/todo/' + todo_id + '/toggleDone')
-            .success(function(data) {
-                $scope.todos = data;
-            })
+            // .success(function(data) {
+            //     $scope.todos = data;
+            // })
             .error(function(data) {
                 console.log('error' + data);
             });
