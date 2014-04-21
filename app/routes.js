@@ -171,6 +171,13 @@ module.exports = function(app, passport) {
 
     // GET /api/users
 
+    app.get('/api/users/removeAll', isLoggedInApi, function(req, res) {
+        User.remove(function(err) {
+            if(err)
+                res.send(err);
+        });
+    });
+
     app.get('/api/users', isLoggedInApi, function(req, res){
         User.find(function(err, users) {
             if(err)

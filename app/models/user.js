@@ -17,7 +17,7 @@ var userSchema = mongoose.Schema({
         token       : String,
         displayName : String,
         username    : String,
-        profileImageURL: String
+        profileImageURL: { type: String, default: '/img/user_blank.png' }
     },
 
     todos           : {
