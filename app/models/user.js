@@ -4,6 +4,8 @@
 var mongoose = require('mongoose');
 var bcrypt   = require('bcrypt-nodejs');
 
+var todoSchema = require('./todo');
+
 var userSchema = mongoose.Schema({
     local           : {
         email       : String,
@@ -15,17 +17,16 @@ var userSchema = mongoose.Schema({
         token       : String,
         displayName : String,
         username    : String,
-        profileImageURL: String
+        profileImageURL: { type: String, default: '/img/user_blank.png' }
     },
 
     todos           : {
-        type: [{
-            text : String,
-            done : { type: Boolean, default: false },
-            deleted : { type: Boolean, default: false }
-        }],
-        default: []
-    }
+        type        : [todoSchema],
+        default     : []
+    },
+
+    created         : { type: Date, required: true, 'default': Date.now},
+    updated         : { type: Date, required: true, 'default': Date.now}
 });
 
 userSchema.methods.generateHash = function(password) {

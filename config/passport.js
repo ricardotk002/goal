@@ -113,7 +113,7 @@ module.exports = function(passport) {
                     newUser.twitter.token       = token;
                     newUser.twitter.username    = profile.username;
                     newUser.twitter.displayName = profile.displayName;
-                    newUser.twitter.profileImageURL = profile.photos.value;
+                    newUser.twitter.profileImageURL = profile.photos[0].value;
 
                     // save our user into the database
                     newUser.save(function(err) {
