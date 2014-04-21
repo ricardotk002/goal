@@ -320,34 +320,34 @@ h1,h2,h3,h4,h5,h6{
 
 
 #write{
-	position: absolute;
+	position: relative;
 	top:55px;
 	width: 100%;
 	input[type="text"]{
-		// -webkit-appearance: none;
-		// -webkit-border-radius: 0;
-		// border-radius: 0;
-		// background-color: white;
-		// font-family: "jaf-bernino-sans",sans-serif;
-		// font-style: normal;
-		// font-weight: 300;
-		// -webkit-box-shadow: none;
-		// box-shadow: none;
-		// color: #ACACAC;
-		// display: block;
-		// margin: 0 0 0 0;
+		-webkit-appearance: none;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		background-color: white;
+		font-family: "jaf-bernino-sans",sans-serif;
+		font-style: normal;
+		font-weight: 300;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		color: #ACACAC;
+		display: block;
+		margin: 0 0 0 0;
 		height: 50px;
 		width: 100%;
-		// -moz-box-sizing: border-box;
-		// -webkit-box-sizing: border-box;
-		// box-sizing: border-box;
-		// -webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
-		// -moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
-		// transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
-		// padding: 1rem;
-		// font-size: 1.2rem;
-		// background: #FDFDFD;
-		// border: none;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
+		-moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
+		transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+		padding: 1rem;
+		font-size: 1.2rem;
+		background: #FDFDFD;
+		border: none;
 		&:focus{
 			outline: none;
 			& + span{
@@ -398,6 +398,7 @@ h1,h2,h3,h4,h5,h6{
 			margin-bottom: 1rem;
 			border-radius: 2px;
 			border: 1px solid #EEEEEE;
+			border-right: 1px solid #e3e3e3;
 			border-bottom: 1px solid #e3e3e3;
 			.item_content{
 				padding: 1rem 20px;
@@ -444,9 +445,6 @@ h1,h2,h3,h4,h5,h6{
 			}
 			.item_check_active{
 				left: 0;
-			}
-			&:last-child{
-				border: none;
 			}
 		}
 	}
