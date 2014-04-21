@@ -320,8 +320,12 @@ h1,h2,h3,h4,h5,h6{
 
 
 #write{
-	position: relative;
+	position: absolute;
+	top:55px;
+	width: 100%;
 	input[type="text"]{
+
+		text-align: center;
 		-webkit-appearance: none;
 		-webkit-border-radius: 0;
 		border-radius: 0;
@@ -342,13 +346,10 @@ h1,h2,h3,h4,h5,h6{
 		-webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
 		-moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
 		transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
-		padding: 1rem 60px 1rem 20px;
+		padding: 1rem;
 		font-size: 1.2rem;
 		background: #FDFDFD;
 		border: none;
-		border-top: 1px solid #e3e3e3;
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;
 		&:focus{
 			outline: none;
 			& + span{
