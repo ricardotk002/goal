@@ -8,7 +8,6 @@ app.controller('MainController', function($scope, $http, $filter) {
     $http.get('/api/user/todos')
         .success(function(data) {
             $scope.todos = data;
-            console.log(data);
         })
         .error(function(data) {
             console.log('error' + data);
@@ -19,7 +18,6 @@ app.controller('MainController', function($scope, $http, $filter) {
             .success(function(data) {
                 $scope.formData = {};
                 $scope.todos = data;
-                console.log(data);
             })
             .error(function(data) {
                 console.log('error' + data);
@@ -31,7 +29,6 @@ app.controller('MainController', function($scope, $http, $filter) {
             .success(function(data) {
                 $scope.formData = {};
                 $scope.todos = data;
-                console.log(data);
             })
             .error(function(data) {
                 console.log('error' + data);
