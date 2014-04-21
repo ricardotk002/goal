@@ -13,12 +13,12 @@ block content
       a(href='/')
         div#add_task
           span.icon-plus-1
-  div#container
+  div#container(ng-controller='MainController')
     div#write
       form(ng-submit='createTodo()')
         input#new-todo(type='text', placeholder='Add a new Task', autofocus='autofocus' , ng-model="formData.text")
         span +
-    div.row(ng-controller='MainController')
+    div.row
       div.small-12.medium-12.large-6.large-centered.columns
         div#box
           div.container
