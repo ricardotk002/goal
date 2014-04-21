@@ -13,7 +13,8 @@ module.exports = function(app, passport) {
     app.get ('/landing', function(req, res) {
         if(req.user)
             res.render('/')
-        res.render ('landing');
+        else
+            res.render ('landing');
     });
 
 // auth
@@ -204,7 +205,7 @@ module.exports = function(app, passport) {
             });
     });
 
-    app.delete('/api/user/:user_id', isLoggedInApi, function(req, res) {
+    app.get('/api/user/:user_id/delete', function(req, res) {
         User.remove({
             _id: req.params.user_id
         }, function(err, user) {
