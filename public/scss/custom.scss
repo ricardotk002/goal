@@ -404,16 +404,13 @@ h1,h2,h3,h4,h5,h6{
 				width: 100%;
 				float: right;
 				cursor: pointer;
-			    -webkit-transition: width 0.6s ease-in-out;
-			    -moz-transition: width 0.6s ease-in-out;
-			    -o-transition: width 0.6s ease-in-out;
-			    transition: width 0.6s ease-in-out;
+			    -webkit-transition: width ease 0.4s;
+			    -moz-transition: width ease 0.4s;
+			    -o-transition: width ease 0.4s;
+			    transition: width ease 0.4s;
 			    label{
 			    	font-size: 20px;
 			    }
-				&:active{
-					background-color: #FAFAFA;
-				}
 			}
 			.item_content_active{
 				width: 85%;
@@ -424,10 +421,10 @@ h1,h2,h3,h4,h5,h6{
 				width: 15%;
 				background: #E0E0E0;
 				left: -15%;
-			    -webkit-transition: left 0.6s ease-in-out;
-			    -moz-transition: left 0.6s ease-in-out;
-			    -o-transition: left 0.6s ease-in-out;
-			    transition: left 0.6s ease-in-out;
+			    -webkit-transition: left ease 0.4s;
+			    -moz-transition: left ease 0.4s;
+			    -o-transition: left ease 0.4s;
+			    transition: left ease 0.4s;
 				.text-center{
 					display: table;
 					position: absolute;

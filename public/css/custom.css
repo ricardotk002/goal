@@ -437,43 +437,39 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   float: right;
   cursor: pointer;
-  -webkit-transition: width 0.6s ease-in-out;
-  -moz-transition: width 0.6s ease-in-out;
-  -o-transition: width 0.6s ease-in-out;
-  transition: width 0.6s ease-in-out;
+  -webkit-transition: width ease 0.4s;
+  -moz-transition: width ease 0.4s;
+  -o-transition: width ease 0.4s;
+  transition: width ease 0.4s;
 }
 /* line 411, ../scss/custom.scss */
 #box #list_item .item .item_content label {
   font-size: 20px;
 }
-/* line 414, ../scss/custom.scss */
-#box #list_item .item .item_content:active {
-  background-color: #FAFAFA;
-}
-/* line 418, ../scss/custom.scss */
+/* line 415, ../scss/custom.scss */
 #box #list_item .item .item_content_active {
   width: 85%;
 }
-/* line 421, ../scss/custom.scss */
+/* line 418, ../scss/custom.scss */
 #box #list_item .item .item_check {
   height: 100%;
   position: absolute;
   width: 15%;
   background: #E0E0E0;
   left: -15%;
-  -webkit-transition: left 0.6s ease-in-out;
-  -moz-transition: left 0.6s ease-in-out;
-  -o-transition: left 0.6s ease-in-out;
-  transition: left 0.6s ease-in-out;
+  -webkit-transition: left ease 0.4s;
+  -moz-transition: left ease 0.4s;
+  -o-transition: left ease 0.4s;
+  transition: left ease 0.4s;
 }
-/* line 431, ../scss/custom.scss */
+/* line 428, ../scss/custom.scss */
 #box #list_item .item .item_check .text-center {
   display: table;
   position: absolute;
   height: 100%;
   width: 100%;
 }
-/* line 436, ../scss/custom.scss */
+/* line 433, ../scss/custom.scss */
 #box #list_item .item .item_check .text-center .icon-ok {
   display: table-cell;
   vertical-align: middle;
@@ -483,22 +479,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
-/* line 447, ../scss/custom.scss */
+/* line 444, ../scss/custom.scss */
 #box #list_item .item .item_check_active {
   left: 0;
 }
-/* line 450, ../scss/custom.scss */
+/* line 447, ../scss/custom.scss */
 #box #list_item .item:last-child {
   border: none;
 }
 
-/* line 457, ../scss/custom.scss */
+/* line 454, ../scss/custom.scss */
 hr {
   border: solid #FFFFFF;
   border-width: 1px 0 0;
 }
 
-/* line 462, ../scss/custom.scss */
+/* line 459, ../scss/custom.scss */
 .done-false {
   text-decoration: none;
   -webkit-transition: text-decoration ease 0.8s;
@@ -508,7 +504,7 @@ hr {
   transition: text-decoration ease 0.8s;
 }
 
-/* line 471, ../scss/custom.scss */
+/* line 468, ../scss/custom.scss */
 .done-true {
   text-decoration: line-through;
   -webkit-transition: text-decoration ease 0.8s;
@@ -519,7 +515,7 @@ hr {
   color: #b3b3b1;
 }
 
-/* line 482, ../scss/custom.scss */
+/* line 479, ../scss/custom.scss */
 ul {
   margin: 0;
   padding: 0;
@@ -527,81 +523,81 @@ ul {
   list-style-type: none;
 }
 
-/* line 490, ../scss/custom.scss */
+/* line 487, ../scss/custom.scss */
 .turquoise {
   background-color: #1abc9c !important;
 }
 
-/* line 494, ../scss/custom.scss */
+/* line 491, ../scss/custom.scss */
 .peter-river {
   background-color: #3498db !important;
 }
 
-/* line 498, ../scss/custom.scss */
+/* line 495, ../scss/custom.scss */
 .amethyst {
   background-color: #9b59b6 !important;
 }
 
-/* line 502, ../scss/custom.scss */
+/* line 499, ../scss/custom.scss */
 .wet-asphalt {
   background-color: #34495e !important;
 }
 
-/* line 506, ../scss/custom.scss */
+/* line 503, ../scss/custom.scss */
 .green-sea {
   background-color: #16a085 !important;
 }
 
-/* line 510, ../scss/custom.scss */
+/* line 507, ../scss/custom.scss */
 .nephritis {
   background-color: #27ae60 !important;
 }
 
-/* line 514, ../scss/custom.scss */
+/* line 511, ../scss/custom.scss */
 .belize-hole {
   background-color: #2980b9 !important;
 }
 
-/* line 518, ../scss/custom.scss */
+/* line 515, ../scss/custom.scss */
 .wisteria {
   background-color: #8e44ad !important;
 }
 
-/* line 522, ../scss/custom.scss */
+/* line 519, ../scss/custom.scss */
 .midnight-blue {
   background-color: #2c3e50 !important;
 }
 
-/* line 526, ../scss/custom.scss */
+/* line 523, ../scss/custom.scss */
 .sun-flower {
   background-color: #f1c40f !important;
 }
 
-/* line 530, ../scss/custom.scss */
+/* line 527, ../scss/custom.scss */
 .orange {
   background-color: #f39c12 !important;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 536, ../scss/custom.scss */
+  /* line 533, ../scss/custom.scss */
   #box {
     margin-top: 250px;
   }
 
-  /* line 539, ../scss/custom.scss */
+  /* line 536, ../scss/custom.scss */
   #top-bar .row h1 {
     text-align: center;
     line-height: 1;
     font-size: 2.75rem;
   }
 
-  /* line 544, ../scss/custom.scss */
+  /* line 541, ../scss/custom.scss */
   .top_bar_user {
     display: block !important;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 552, ../scss/custom.scss */
+  /* line 549, ../scss/custom.scss */
   .top_bar_user #username {
     display: inline-block !important;
   }
