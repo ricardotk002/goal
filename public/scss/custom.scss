@@ -450,6 +450,52 @@ h1,h2,h3,h4,h5,h6{
 			&:last-child{
 				border: none;
 			}
+			form {
+				margin: 0;
+				.edit {
+					display: none;
+				}
+			}
+		}
+
+		.item.editing {
+			.item_content, .item_content_active {
+				display: none;
+			}
+			form {
+				.edit {
+					float: right;
+					display: block;
+					width: 100%;
+					-webkit-appearance: none;
+					-webkit-border-radius: 0;
+					border-radius: 0;
+					background-color: white;
+					font-family: "jaf-bernino-sans",sans-serif;
+					font-style: normal;
+					font-weight: 300;
+					-webkit-box-shadow: none;
+					box-shadow: none;
+					color: #ACACAC;
+					display: block;
+					margin: 0 0 0 0;
+					height: 70px;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					box-sizing: border-box;
+					-webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
+					-moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
+					transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+					padding: 1rem;
+					font-size: 1.2rem;
+					background: #FDFDFD;
+					border: none;
+				}
+
+				.edit_active {
+					width: 85%;
+				}
+			}
 		}
 	}
 }

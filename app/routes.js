@@ -60,6 +60,28 @@ module.exports = function(app, passport) {
             });
     });
 
+    app.put('/api/user/todo', isLoggedInApi, function(req, res) {
+        User.findById({ '_id' : req.user._id, 'todos._id' : req.body._id }, 
+            function(err, user) {
+                if(err)
+                    req.send(err);
+
+                user.todos.forEach(function(todo) {
+                    if( req.body._id == todo._id ) {
+                        todo.text = req.body.text;
+                        todo.updated = Date.now();
+                    }
+                });
+
+                user.save(function(err) {
+                    if(err)
+                        res.send(err);
+                });
+
+                res.send(user.todos);
+            });
+    });
+
     app.delete('/api/user/todo/:todo_id', isLoggedInApi, function(req, res) {
         User.findByIdAndUpdate(req.user._id,
             {
@@ -200,6 +222,15 @@ module.exports = function(app, passport) {
                 if(err)
                     req.send(err);
                 res.json(user);
+            });
+    });
+
+    app.get('/api/user/:user_id/todos', isLoggedInApi, function(req, res) {
+        User.findById(req.params.user_id,
+            function(err, user) {
+                if(err)
+                    req.send(err);
+                res.json(user.todos);
             });
     });
 

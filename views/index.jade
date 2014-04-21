@@ -27,13 +27,16 @@ block content
               //- label(for='toggle-all', style='display:none;')
 
               ul#todo-list
-                li.item(ng-repeat='todo in todos', ng-class="{done: todo.done}")
+                li.item(ng-repeat='todo in todos', ng-class="{done: todo.done, editing: todo == editedTodo}")
                   div.item_check(ng-class="{item_check_active: todo.done}")
                     div.text-center
                       i.icon-ok
-                  div.view.item_content(ng-click='toggleDone(todo._id, $index); $event.stopPropagation();', ng-class="{item_content_active: todo.done}")
+                  div.view.item_content(ng-click='toggleDone(todo); $event.stopPropagation();', ng-dblClick="editTodo(todo); $event.stopPropagation();" ,ng-class="{item_content_active: todo.done}")
                     label {{ todo.text }}
-                    a.destroy(ng-click='deleteTodo(todo._id); $event.stopPropagation();')
+                    a.destroy(ng-click='deleteTodo(todo); $event.stopPropagation();')
+                  form(ng-submit='doneEditing(todo)')
+                    input.edit(ng-model='todo.text', ng-blur='doneEditing(todo)', ng-class='{edit_active: todo.done}' todo-scape='revertEditing(todo)', todo-focus='todo == editedTodo')
+
 
                   //- input.edit(type='text', value='{{ todo.text }}')
 
