@@ -6,6 +6,7 @@ var User = require('./models/user');
 module.exports = function(app, passport) {
     // GET /
     app.get('/', isLoggedIn, function(req, res){
+        req.user.twitter.displayName = req.user.twitter.displayName.split(' ')[0];
         res.render('index', { user : req.user });
     });
 
