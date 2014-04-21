@@ -183,6 +183,7 @@ body{
 #container{
 	height: 100%;
 	background-color: #ECF0F1;
+	margin-top: 55px;
 }
 
 .bg_1{
@@ -320,8 +321,8 @@ h1,h2,h3,h4,h5,h6{
 
 
 #write{
-	position: relative;
-	top:55px;
+	// position: relative;
+	// top:55px;
 	width: 100%;
 	input[type="text"]{
 		-webkit-appearance: none;
