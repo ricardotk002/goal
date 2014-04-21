@@ -16,7 +16,7 @@ block content
   div#container(ng-controller='MainController')
     div#write
       form(ng-submit='createTodo()')
-        input#new-todo(type='text', placeholder='Add a new Task', autofocus='autofocus' , ng-model="formData.text")
+        input#new-todo(type='text', placeholder='Add a new Task', ng-model="formData.text")
         span +
     div.row
       div.small-12.medium-12.large-6.large-centered.columns
