@@ -31,7 +31,6 @@ body {
 
 #top-bar{
 	position: fixed;
-	padding-right: 55px;
 	height: 55px;
 	width: 100%;
 	background: #2E3435;
@@ -49,6 +48,7 @@ body {
 		h1{
 			text-align: center;
 			line-height: 1;
+			font-size: 2.75rem;
 			a{
 				img{
 					width: 91px;
@@ -57,18 +57,33 @@ body {
 			}
 		}
 		#username{
+			display: none;
 			color: #FFFFFF;
 			font-family: "museo-sans",sans-serif;
 			font-size: 1rem;
 			font-weight: 300;
-			float: right;
 			line-height: 55px;
 		}
+	}
+	.top_bar_user{
+		padding-right: 55px;
+		line-height: 55px;
+		text-align: right;
+		display: none;
+	}
+	#profile_pic{
+		border-radius: 50%;
+		margin-right: 10px;
+		position: relative;
+		bottom: 2px;
 	}
 	#add_task{
 		width: 55px;
 		height: 55px;
-		background: #35C2AB;
+		text-align: center;
+		background-color: #45e5cb;
+		position: absolute;
+		right: 0px;
 		background-image: -o-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
 		background-image: -moz-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
 		background-image: -webkit-linear-gradient(-90deg, #35C2AB 0%, #45E5CB 100%);
@@ -77,6 +92,7 @@ body {
 		span{
 			font-size: 1rem;
 			color: #FFFFFF;
+			line-height: 55px;
 		}
 	}
 }
@@ -357,7 +373,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #box{
-	margin-top: 0.9375rem;
+	margin-top: 5.9375rem;
 	#title{
 		background-color: #27ae60;
 		padding: 20px;
@@ -515,9 +531,26 @@ list-style-type: none;
 }
 
 @media only screen and (min-width: 40.063em) { 
+
 	#box {
 	margin-top: 250px;
 	}
+	#top-bar .row h1 {
+		text-align: center;
+		line-height: 1;
+		font-size: 2.75rem;
+	}
+	.top_bar_user{
+		display: block !important;
+	}
 }
 
+@media only screen and (min-width: 64.063em) { 
+	
+	.top_bar_user{
+		#username{
+			display: inline-block !important;
+		}
+	}
 
+}
