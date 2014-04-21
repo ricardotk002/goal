@@ -38,12 +38,12 @@ app.controller('MainController', function($scope, $http) {
     };
 
     $scope.toggleDone = function(id) {
-        // $http.put('/api/user/todo/' + id + '/toggleDone')
-        //     .success(function(data) {
-        //         $scope.todos = data;
-        //     })
-        //     .error(function(data) {
-        //         console.log('error' + data);
-        //     });
+        $http.put('/api/user/todo/' + id + '/toggleDone')
+            .success(function(data) {
+                $scope.todos = data;
+            })
+            .error(function(data) {
+                console.log('error' + data);
+            });
     }
 });

@@ -30,7 +30,7 @@ block content
                   div.item_check(ng-class="{item_check_active: todo.done}")
                     div.text-center
                       i.icon-ok
-                  div.view.item_content(ng-click='toggleDone(todo._id)', ng-class="{item_content_active: todo.done}")
+                  div.view.item_content(ng-click='toggleDone(todo._id); $event.stopPropagation();', ng-class="{item_content_active: todo.done}")
                     label {{ todo.text }}
                     a.destroy(ng-click='deleteTodo(todo._id)')
 
