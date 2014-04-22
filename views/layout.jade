@@ -26,6 +26,13 @@ html
     //var items = ['turquoise','peter-river','amethyst','wet-asphalt','green-sea','nephritis','belize-hole','wisteria','midnight-blue','sun-flower','orange'];
     //var item = items[Math.floor(Math.random()*items.length)];
     $(document).ready(function(){
+
+      $("#add_task").click(function () {
+               $("html, body").animate({ scrollTop: 0 }, "slow");
+               return false;
+      });
+
+
       //Color de Header
       //$("#container").addClass(bg);
       //$("#title").addClass(item);
