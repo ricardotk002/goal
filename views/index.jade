@@ -9,10 +9,7 @@ block content
         div.top_bar_user
           img#profile_pic(src='#{user.twitter.profileImageURL}')
           a(href='#', data-dropbown='sub_menu', data-dropdown-content=''):span#username #{user.twitter.displayName}
-          ul#sub_menu.f-dropdown
-            li
-              a(href='#') Account
-              a.small(href='/logout', style='color: #ccc;')  Sign out
+
       label(for='new-todo')
         div#add_task
           span.icon-plus-1
