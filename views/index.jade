@@ -10,8 +10,8 @@ block content
           img#profile_pic(src='#{user.twitter.profileImageURL}')
           a(href='#', data-dropbown='sub_menu')
             span#username #{user.twitter.displayName}
-          ul#sub_menu.f-dropdown
-            li: a(href='#'): Test
+          ul#sub_menu.f-dropdown(data-dropdown-content)
+            li: a(href='#') Sign out
           a.small(href='/logout', style='color: #ccc;')  (logout)
       label(for='new-todo')
         div#add_task
