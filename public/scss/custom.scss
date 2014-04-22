@@ -415,6 +415,16 @@ h1,h2,h3,h4,h5,h6{
 			}
 			.item_content_active{
 				width: 85%;
+				label{
+					  text-decoration: line-through;
+					  -webkit-transition: text-decoration ease 0.8s;
+					  -moz-transition: text-decoration ease 0.8s;
+					  -ms-transition: text-decoration ease 0.8s;
+					  -o-transition: text-decoration ease 0.8s;
+					  transition: text-decoration ease 0.8s;
+					  color: #b3b3b1;
+				}
+
 			}
 			.item_check{
 				height: 100%;

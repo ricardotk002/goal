@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*-----------------------------------------------------------------------------------
 
   1.  Document Setup
@@ -9,12 +8,15 @@
 /*-----------------------------------------------------------------------------------*/
 /*  1.  Document Setup
 /*-----------------------------------------------------------------------------------*/
+/* line 14, ../scss/custom.scss */
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
+/* line 21, ../scss/custom.scss */
 body {
   font-family: "jaf-bernino-sans",sans-serif;
   font-style: normal;
@@ -23,8 +25,10 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+}
 
+/* line 32, ../scss/custom.scss */
 #top-bar {
   position: fixed;
   height: 55px;
@@ -36,149 +40,197 @@ body {
   background-image: -webkit-linear-gradient(-90deg, #2e3435 0%, #3e4647 100%);
   background-image: -ms-linear-gradient(-90deg, #2e3435 0%, #3e4647 100%);
   background-image: linear-gradient(-180deg, #2e3435 0%, #3e4647 100%);
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
-  #top-bar .row {
-    max-width: none; }
-    #top-bar .row h1 {
-      text-align: center;
-      line-height: 1;
-      font-size: 2.75rem; }
-      #top-bar .row h1 a img {
-        width: 91px;
-        height: 17px; }
-    #top-bar .row #username {
-      display: none;
-      color: #FFFFFF;
-      font-family: "museo-sans",sans-serif;
-      font-size: 1rem;
-      font-weight: 300;
-      line-height: 55px; }
-  #top-bar .top_bar_user {
-    padding-right: 55px;
-    line-height: 55px;
-    text-align: right;
-    display: none; }
-  #top-bar #profile_pic {
-    border-radius: 50%;
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
-    position: relative;
-    bottom: 2px; }
-  #top-bar #add_task {
-    width: 55px;
-    height: 55px;
-    text-align: center;
-    background-color: #45e5cb;
-    position: absolute;
-    right: 0px;
-    background-image: -o-linear-gradient(-90deg, #35c2ab 0%, #45e5cb 100%);
-    background-image: -moz-linear-gradient(-90deg, #35c2ab 0%, #45e5cb 100%);
-    background-image: -webkit-linear-gradient(-90deg, #35c2ab 0%, #45e5cb 100%);
-    background-image: -ms-linear-gradient(-90deg, #35c2ab 0%, #45e5cb 100%);
-    background-image: linear-gradient(-180deg, #35c2ab 0%, #45e5cb 100%); }
-    #top-bar #add_task span {
-      font-size: 1rem;
-      color: #FFFFFF;
-      line-height: 55px; }
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+}
+/* line 46, ../scss/custom.scss */
+#top-bar .row {
+  max-width: none;
+}
+/* line 48, ../scss/custom.scss */
+#top-bar .row h1 {
+  text-align: center;
+  line-height: 1;
+  font-size: 2.75rem;
+}
+/* line 53, ../scss/custom.scss */
+#top-bar .row h1 a img {
+  width: 91px;
+  height: 17px;
+}
+/* line 59, ../scss/custom.scss */
+#top-bar .row #username {
+  display: none;
+  color: #FFFFFF;
+  font-family: "museo-sans",sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 55px;
+}
+/* line 68, ../scss/custom.scss */
+#top-bar .top_bar_user {
+  padding-right: 55px;
+  line-height: 55px;
+  text-align: right;
+  display: none;
+}
+/* line 74, ../scss/custom.scss */
+#top-bar #profile_pic {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  bottom: 2px;
+}
+/* line 82, ../scss/custom.scss */
+#top-bar #add_task {
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  background-color: #45e5cb;
+  position: absolute;
+  right: 0px;
+  background-image: -o-linear-gradient(-90deg, #35c2ab 0%, #45e5cb 100%);
+  background-image: -moz-linear-gradient(-90deg, #35c2ab 0%, #45e5cb 100%);
+  background-image: -webkit-linear-gradient(-90deg, #35c2ab 0%, #45e5cb 100%);
+  background-image: -ms-linear-gradient(-90deg, #35c2ab 0%, #45e5cb 100%);
+  background-image: linear-gradient(-180deg, #35c2ab 0%, #45e5cb 100%);
+}
+/* line 94, ../scss/custom.scss */
+#top-bar #add_task span {
+  font-size: 1rem;
+  color: #FFFFFF;
+  line-height: 55px;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*  2.  Landing Page
 /*-----------------------------------------------------------------------------------*/
+/* line 107, ../scss/custom.scss */
 body {
-  display: table; }
+  display: table;
+}
 
+/* line 111, ../scss/custom.scss */
 #landing {
   display: table-cell;
-  vertical-align: middle; }
-  #landing h1 {
-    margin: 0; }
-    #landing h1 img {
-      width: 191px;
-      height: 144px; }
-  #landing h2 {
-    font-family: "museo-sans",sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 1.8rem;
-    color: #7C7C7C;
-    margin: 50px auto; }
-  #landing #twitter_button {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 15px 30px;
-    border-radius: 50px;
-    background-color: #00ACED;
-    border: 1px solid #009DD9;
-    border-bottom: 2px solid #009DD9;
-    font-family: "museo-sans",sans-serif;
-    font-style: normal;
-    font-weight: 100 !important;
-    outline: none;
-    -webkit-transition: all ease-in-out 0.1s;
-    -moz-transition: all ease-in-out 0.1s;
-    -ms-transition: all ease-in-out 01s;
-    -o-transition: all ease-in-out 0.1s;
-    transition: all ease-in-out 0.1s; }
-    #landing #twitter_button span {
-      color: #FFFFFF;
-      font-size: 1.1rem;
-      margin-left: 8px; }
-    #landing #twitter_button .icon-twitter {
-      color: #FFFFFF;
-      font-size: 1rem; }
-  #landing #twitter_button:hover {
-    background-color: #00B2F5;
-    border: 1px solid #00B2F5;
-    border-bottom: 2px solid #009DD9; }
-  #landing #twitter_button:active {
-    background-color: #00ACED;
-    border: 1px solid #009DD9;
-    border-top: 2px solid #009DD9; }
+  vertical-align: middle;
+}
+/* line 115, ../scss/custom.scss */
+#landing h1 {
+  margin: 0;
+}
+/* line 117, ../scss/custom.scss */
+#landing h1 img {
+  width: 191px;
+  height: 144px;
+}
+/* line 123, ../scss/custom.scss */
+#landing h2 {
+  font-family: "museo-sans",sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1.8rem;
+  color: #7C7C7C;
+  margin: 50px auto;
+}
+/* line 132, ../scss/custom.scss */
+#landing #twitter_button {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: #00ACED;
+  border: 1px solid #009DD9;
+  border-bottom: 2px solid #009DD9;
+  font-family: "museo-sans",sans-serif;
+  font-style: normal;
+  font-weight: 100 !important;
+  outline: none;
+  -webkit-transition: all ease-in-out 0.1s;
+  -moz-transition: all ease-in-out 0.1s;
+  -ms-transition: all ease-in-out 01s;
+  -o-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
+}
+/* line 150, ../scss/custom.scss */
+#landing #twitter_button span {
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  margin-left: 8px;
+}
+/* line 155, ../scss/custom.scss */
+#landing #twitter_button .icon-twitter {
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+/* line 160, ../scss/custom.scss */
+#landing #twitter_button:hover {
+  background-color: #00B2F5;
+  border: 1px solid #00B2F5;
+  border-bottom: 2px solid #009DD9;
+}
+/* line 166, ../scss/custom.scss */
+#landing #twitter_button:active {
+  background-color: #00ACED;
+  border: 1px solid #009DD9;
+  border-top: 2px solid #009DD9;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*  3.  To Do List Page
 /*-----------------------------------------------------------------------------------*/
+/* line 183, ../scss/custom.scss */
 #container {
   height: 100%;
   background-color: #ECF0F1;
-  margin-top: 55px; }
+  margin-top: 55px;
+}
 
+/* line 189, ../scss/custom.scss */
 .bg_1 {
   background: url("../img/bg_1.jpg") no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   position: relative;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+}
 
+/* line 198, ../scss/custom.scss */
 .bg_1_blur {
   background: url("../img/bg_1_blur.jpg") no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   position: relative;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+}
 
+/* line 207, ../scss/custom.scss */
 .bg_2 {
   background: url("../img/bg_2.jpg") no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   position: relative;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+}
 
+/* line 216, ../scss/custom.scss */
 .bg_2_blur {
   background: url("../img/bg_2_blur.jpg") no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   position: relative;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+}
 
+/* line 225, ../scss/custom.scss */
 #todo-list .destroy {
   position: absolute;
   right: 5px;
@@ -187,25 +239,33 @@ body {
   cursor: pointer;
   width: 20px;
   height: 20px;
-  background: url(../img/destroy.png) no-repeat; }
+  background: url(../img/destroy.png) no-repeat;
+}
 
+/* line 236, ../scss/custom.scss */
 #todo-list li:hover .destroy {
-  display: block; }
+  display: block;
+}
 
+/* line 240, ../scss/custom.scss */
 #todo-list .destroy:hover {
-  background-position: 0 -20px; }
+  background-position: 0 -20px;
+}
 
+/* line 244, ../scss/custom.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "jaf-bernino-sans",sans-serif;
   font-style: normal;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 @font-face {
   font-family: 'goal';
   src: url("../font/goal.eot?40247410");
   src: url("../font/goal.eot?40247410#iefix") format("embedded-opentype"), url("../font/goal.woff?40247410") format("woff"), url("../font/goal.ttf?40247410") format("truetype"), url("../font/goal.svg?40247410#goal") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
@@ -217,6 +277,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 */
+/* line 271, ../scss/custom.scss */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "goal";
   font-style: normal;
@@ -239,20 +300,28 @@ h1, h2, h3, h4, h5, h6 {
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
 
+/* line 302, ../scss/custom.scss */
 .icon-ok:before {
-  content: '\e800'; }
+  content: '\e800';
+}
 
 /* '' */
+/* line 303, ../scss/custom.scss */
 .icon-plus-1:before {
-  content: '\e803'; }
+  content: '\e803';
+}
 
 /* '' */
+/* line 304, ../scss/custom.scss */
 .icon-twitter:before {
-  content: '\e801'; }
+  content: '\e801';
+}
 
 /* '' */
+/* line 306, ../scss/custom.scss */
 .mask {
   position: absolute;
   background: url("../img/bg.jpg") no-repeat;
@@ -266,168 +335,232 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+}
 
+/* line 323, ../scss/custom.scss */
 #write {
-  width: 100%; }
-  #write input[type="text"] {
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    background-color: white;
-    font-family: "jaf-bernino-sans",sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    color: #ACACAC;
-    display: block;
-    margin: 0 0 0 0;
-    height: 50px;
-    width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
-    -moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
-    transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
-    padding: 1rem;
-    font-size: 1.2rem;
-    background: #FDFDFD;
-    border: none; }
-    #write input[type="text"]:focus {
-      outline: none; }
-      #write input[type="text"]:focus + span {
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg); }
-  #write span {
-    font-family: "jaf-bernino-sans",sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 36px;
-    position: absolute;
-    right: 20px;
-    top: 5px;
-    color: #ACACAC;
-    -webkit-transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    transition: all ease 0.3s; }
+  width: 100%;
+}
+/* line 325, ../scss/custom.scss */
+#write input[type="text"] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: white;
+  font-family: "jaf-bernino-sans",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #ACACAC;
+  display: block;
+  margin: 0 0 0 0;
+  height: 50px;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
+  -moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background: #FDFDFD;
+  border: none;
+}
+/* line 350, ../scss/custom.scss */
+#write input[type="text"]:focus {
+  outline: none;
+}
+/* line 352, ../scss/custom.scss */
+#write input[type="text"]:focus + span {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 358, ../scss/custom.scss */
+#write span {
+  font-family: "jaf-bernino-sans",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  color: #ACACAC;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
 
+/* line 375, ../scss/custom.scss */
 #box {
-  margin-top: 2rem; }
-  #box #title {
-    background-color: #27ae60;
-    padding: 20px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px; }
-    #box #title h2 {
-      color: #FFFFFF;
-      font-weight: 100; }
-  #box .container {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px; }
-  #box #list_item {
-    color: #3A3A3A; }
-    #box #list_item .item {
-      background-color: #27ae60;
-      overflow: hidden;
-      position: relative;
-      margin-bottom: 1rem;
-      border-radius: 2px;
-      border: 1px solid #EEEEEE;
-      border-right: 1px solid #e3e3e3;
-      border-bottom: 1px solid #e3e3e3; }
-      #box #list_item .item .item_content {
-        padding: 1rem 20px;
-        background-color: #FFFFFF;
-        width: 100%;
-        float: right;
-        cursor: pointer;
-        -webkit-transition: width ease 0.4s;
-        -moz-transition: width ease 0.4s;
-        -o-transition: width ease 0.4s;
-        transition: width ease 0.4s; }
-        #box #list_item .item .item_content label {
-          font-size: 20px; }
-      #box #list_item .item .item_content_active {
-        width: 85%; }
-      #box #list_item .item .item_check {
-        height: 100%;
-        position: absolute;
-        width: 15%;
-        background: #E0E0E0;
-        left: -15%;
-        -webkit-transition: left ease 0.4s;
-        -moz-transition: left ease 0.4s;
-        -o-transition: left ease 0.4s;
-        transition: left ease 0.4s; }
-        #box #list_item .item .item_check .text-center {
-          display: table;
-          position: absolute;
-          height: 100%;
-          width: 100%; }
-          #box #list_item .item .item_check .text-center .icon-ok {
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
-            color: #FFFFFF;
-            font-size: 1.5rem;
-            margin: 0;
-            padding: 0; }
-      #box #list_item .item .item_check_active {
-        left: 0; }
-      #box #list_item .item:last-child {
-        border: none; }
-      #box #list_item .item form {
-        margin: 0; }
-        #box #list_item .item form .edit {
-          display: none; }
-    #box #list_item .item.editing .item_content, #box #list_item .item.editing .item_content_active {
-      display: none; }
-    #box #list_item .item.editing form .edit {
-      float: right;
-      display: block;
-      width: 100%;
-      -webkit-appearance: none;
-      -webkit-border-radius: 0;
-      border-radius: 0;
-      background-color: white;
-      font-family: "jaf-bernino-sans",sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      color: #ACACAC;
-      display: block;
-      margin: 0 0 0 0;
-      height: 70px;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      -webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
-      -moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
-      transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
-      padding: 1rem;
-      font-size: 1.2rem;
-      background: #FDFDFD;
-      border: none; }
-    #box #list_item .item.editing form .edit_active {
-      width: 85%; }
+  margin-top: 2rem;
+}
+/* line 377, ../scss/custom.scss */
+#box #title {
+  background-color: #27ae60;
+  padding: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* line 382, ../scss/custom.scss */
+#box #title h2 {
+  color: #FFFFFF;
+  font-weight: 100;
+}
+/* line 387, ../scss/custom.scss */
+#box .container {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 391, ../scss/custom.scss */
+#box #list_item {
+  color: #3A3A3A;
+}
+/* line 393, ../scss/custom.scss */
+#box #list_item .item {
+  background-color: #27ae60;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+  border: 1px solid #EEEEEE;
+  border-right: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+/* line 402, ../scss/custom.scss */
+#box #list_item .item .item_content {
+  padding: 1rem 20px;
+  background-color: #FFFFFF;
+  width: 100%;
+  float: right;
+  cursor: pointer;
+  -webkit-transition: width ease 0.4s;
+  -moz-transition: width ease 0.4s;
+  -o-transition: width ease 0.4s;
+  transition: width ease 0.4s;
+}
+/* line 412, ../scss/custom.scss */
+#box #list_item .item .item_content label {
+  font-size: 20px;
+}
+/* line 416, ../scss/custom.scss */
+#box #list_item .item .item_content_active {
+  width: 85%;
+}
+/* line 418, ../scss/custom.scss */
+#box #list_item .item .item_content_active label {
+  text-decoration: line-through;
+  -webkit-transition: text-decoration ease 0.8s;
+  -moz-transition: text-decoration ease 0.8s;
+  -ms-transition: text-decoration ease 0.8s;
+  -o-transition: text-decoration ease 0.8s;
+  transition: text-decoration ease 0.8s;
+  color: #b3b3b1;
+}
+/* line 429, ../scss/custom.scss */
+#box #list_item .item .item_check {
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  background: #E0E0E0;
+  left: -15%;
+  -webkit-transition: left ease 0.4s;
+  -moz-transition: left ease 0.4s;
+  -o-transition: left ease 0.4s;
+  transition: left ease 0.4s;
+}
+/* line 439, ../scss/custom.scss */
+#box #list_item .item .item_check .text-center {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+/* line 444, ../scss/custom.scss */
+#box #list_item .item .item_check .text-center .icon-ok {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+/* line 455, ../scss/custom.scss */
+#box #list_item .item .item_check_active {
+  left: 0;
+}
+/* line 458, ../scss/custom.scss */
+#box #list_item .item:last-child {
+  border: none;
+}
+/* line 461, ../scss/custom.scss */
+#box #list_item .item form {
+  margin: 0;
+}
+/* line 463, ../scss/custom.scss */
+#box #list_item .item form .edit {
+  display: none;
+}
+/* line 470, ../scss/custom.scss */
+#box #list_item .item.editing .item_content, #box #list_item .item.editing .item_content_active {
+  display: none;
+}
+/* line 474, ../scss/custom.scss */
+#box #list_item .item.editing form .edit {
+  float: right;
+  display: block;
+  width: 100%;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: white;
+  font-family: "jaf-bernino-sans",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #ACACAC;
+  display: block;
+  margin: 0 0 0 0;
+  height: 70px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
+  -moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background: #FDFDFD;
+  border: none;
+}
+/* line 503, ../scss/custom.scss */
+#box #list_item .item.editing form .edit_active {
+  width: 85%;
+}
 
+/* line 511, ../scss/custom.scss */
 hr {
   border: solid #FFFFFF;
-  border-width: 1px 0 0; }
+  border-width: 1px 0 0;
+}
 
+/* line 516, ../scss/custom.scss */
 .done-false {
   text-decoration: none;
   -webkit-transition: text-decoration ease 0.8s;
   -moz-transition: text-decoration ease 0.8s;
   -ms-transition: text-decoration ease 0.8s;
   -o-transition: text-decoration ease 0.8s;
-  transition: text-decoration ease 0.8s; }
+  transition: text-decoration ease 0.8s;
+}
 
+/* line 525, ../scss/custom.scss */
 .done-true {
   text-decoration: line-through;
   -webkit-transition: text-decoration ease 0.8s;
@@ -435,58 +568,93 @@ hr {
   -ms-transition: text-decoration ease 0.8s;
   -o-transition: text-decoration ease 0.8s;
   transition: text-decoration ease 0.8s;
-  color: #b3b3b1; }
+  color: #b3b3b1;
+}
 
+/* line 536, ../scss/custom.scss */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  list-style-type: none; }
+  list-style-type: none;
+}
 
+/* line 544, ../scss/custom.scss */
 .turquoise {
-  background-color: #1abc9c !important; }
+  background-color: #1abc9c !important;
+}
 
+/* line 548, ../scss/custom.scss */
 .peter-river {
-  background-color: #3498db !important; }
+  background-color: #3498db !important;
+}
 
+/* line 552, ../scss/custom.scss */
 .amethyst {
-  background-color: #9b59b6 !important; }
+  background-color: #9b59b6 !important;
+}
 
+/* line 556, ../scss/custom.scss */
 .wet-asphalt {
-  background-color: #34495e !important; }
+  background-color: #34495e !important;
+}
 
+/* line 560, ../scss/custom.scss */
 .green-sea {
-  background-color: #16a085 !important; }
+  background-color: #16a085 !important;
+}
 
+/* line 564, ../scss/custom.scss */
 .nephritis {
-  background-color: #27ae60 !important; }
+  background-color: #27ae60 !important;
+}
 
+/* line 568, ../scss/custom.scss */
 .belize-hole {
-  background-color: #2980b9 !important; }
+  background-color: #2980b9 !important;
+}
 
+/* line 572, ../scss/custom.scss */
 .wisteria {
-  background-color: #8e44ad !important; }
+  background-color: #8e44ad !important;
+}
 
+/* line 576, ../scss/custom.scss */
 .midnight-blue {
-  background-color: #2c3e50 !important; }
+  background-color: #2c3e50 !important;
+}
 
+/* line 580, ../scss/custom.scss */
 .sun-flower {
-  background-color: #f1c40f !important; }
+  background-color: #f1c40f !important;
+}
 
+/* line 584, ../scss/custom.scss */
 .orange {
-  background-color: #f39c12 !important; }
+  background-color: #f39c12 !important;
+}
 
 @media only screen and (min-width: 40.063em) {
+  /* line 590, ../scss/custom.scss */
   #box {
-    margin-top: 4rem; }
+    margin-top: 4rem;
+  }
 
+  /* line 593, ../scss/custom.scss */
   #top-bar .row h1 {
     text-align: center;
     line-height: 1;
-    font-size: 2.75rem; }
+    font-size: 2.75rem;
+  }
 
+  /* line 598, ../scss/custom.scss */
   .top_bar_user {
-    display: block !important; } }
+    display: block !important;
+  }
+}
 @media only screen and (min-width: 64.063em) {
+  /* line 606, ../scss/custom.scss */
   .top_bar_user #username {
-    display: inline-block !important; } }
+    display: inline-block !important;
+  }
+}
