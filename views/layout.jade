@@ -34,11 +34,7 @@ html
                $("html, body").animate({ scrollTop: 0 }, "slow");
       });
 
-      var elem = document.querySelector('#draggable');
-      var draggie = new Draggabilly( elem, {
-        axis: 'x'
-      });
-
+      var draggie = new Draggabilly( document.querySelector('#draggable') );
 
       //Color de Header
       //$("#container").addClass(bg);
