@@ -27,6 +27,15 @@ html
     // var bg = bgs[Math.floor(Math.random()*bgs.length)];
     //var items = ['turquoise','peter-river','amethyst','wet-asphalt','green-sea','nephritis','belize-hole','wisteria','midnight-blue','sun-flower','orange'];
     //var item = items[Math.floor(Math.random()*items.length)];
+window.onload = function() {
+    if (window.jQuery) {  
+        // jQuery is loaded  
+        alert("Yeah!");
+    } else {
+        // jQuery is not loaded
+        alert("Doesn't Work");
+    }
+}
     $(document).ready(function(){
 
       $("#add_task").click(function () {
