@@ -29,7 +29,7 @@ block content
               //- label(for='toggle-all', style='display:none;')
 
               ul#todo-list
-                li.item(ng-repeat='todo in todos', ng-class="{done: todo.done, editing: todo == editedTodo}")
+                li#draggable.item(ng-repeat='todo in todos', ng-class="{done: todo.done, editing: todo == editedTodo}")
                   div.item_check(ng-class="{item_check_active: todo.done}")
                     div.text-center
                       i.icon-ok

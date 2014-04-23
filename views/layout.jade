@@ -16,17 +16,13 @@ html
   script(src='/js/vendor/jquery.js')
   script(src='/js/foundation.min.js')
   script(src='/js/foundation/foundation.dropdown.js')
+  script(src='/js/foundation/vendor/draggabilly.pkgd.min.js')
   script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js')
   script(src='/js/corona.js')
   script(src='/js/directives/todoEscape.js')
   script(src='/js/directives/todoFocus.js')
   script.
-    $(document).foundation({
-      dropdown: {
-        // specify the class used for active dropdowns
-        active_class: 'open'
-      }
-    });
+    $(document).foundation();
   script.
     // var bgs = ['bg_1','bg_1_blur','bg_2','bg_2_blur'];
     // var bg = bgs[Math.floor(Math.random()*bgs.length)];
@@ -36,6 +32,11 @@ html
 
       $("#add_task").click(function () {
                $("html, body").animate({ scrollTop: 0 }, "slow");
+      });
+
+      var elem = document.querySelector('#draggable');
+      var draggie = new Draggabilly( elem, {
+        axis: 'x'
       });
 
 
