@@ -21,14 +21,31 @@ html
   script(src='/js/directives/todoEscape.js')
   script(src='/js/directives/todoFocus.js')
   script.
-    $(document).foundation();
+    $(document).foundation({
+      dropdown: {
+        // specify the class used for active dropdowns
+        active_class: 'open'
+      }
+    });
   script.
-    window.onload = function() {
-        if (window.jQuery) {  
-            // jQuery is loaded  
-            alert("Yeah!");
-        } else {
-            // jQuery is not loaded
-            alert("Doesn't Work");
-        }
-    }
+    // var bgs = ['bg_1','bg_1_blur','bg_2','bg_2_blur'];
+    // var bg = bgs[Math.floor(Math.random()*bgs.length)];
+    //var items = ['turquoise','peter-river','amethyst','wet-asphalt','green-sea','nephritis','belize-hole','wisteria','midnight-blue','sun-flower','orange'];
+    //var item = items[Math.floor(Math.random()*items.length)];
+    $(document).ready(function(){
+
+      $("#add_task").click(function () {
+               $("html, body").animate({ scrollTop: 0 }, "slow");
+      });
+
+
+      //Color de Header
+      //$("#container").addClass(bg);
+      //$("#title").addClass(item);
+      // $(".item_content").click(function( event ) {
+      //     event.preventDefault();
+      //     $(this).addClass("item_content_active");
+      //     $(this).siblings(".item_check").addClass("item_check_active");
+      //     $(this).find("span").addClass("done-true");
+      // });
+    });
